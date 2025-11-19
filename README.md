@@ -1,16 +1,56 @@
-# Patnagar Panipuri
+# 🥙 Patnagar Panipuri — Gandhinagar, Gujarat  
+**Website Status:** _Under Development_  
+🔗 **Live URL:** _https://patnagar-panipuri.in_ (Coming Soon)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Patnagar Panipuri is a modern and hygienic street-food experience in **Gandhinagar, Gujarat**, offering fresh, flavorful **Panipuri**, delicious chaats, and refreshing beverages.  
+This repository contains the source code of the official **Patnagar Panipuri Website**, built with **React**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🍽️ What We Serve
 
-## React Compiler
+### 🥙 Panipuri Varieties
+- Panipuri
+- Dahipuri
+- Sevpuri
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🍲 Chaats & Snacks
+- Bhel
+- Churmu
+- Thepla
+- Chana Bhel
+- Basket Chat
+- Wafer Chutney
 
-## Expanding the ESLint configuration
+### 🧋 Beverages
+- Lemon Soda
+- Jeera Soda
+- Orange Soda
+- Plain Soda
+- Limca Soda
+- Kalakhatta Soda 
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🕒 Store Timings
+
+Monday – Sunday **10:00 AM – 08:00 PM**
+
+---
+
+## 🛠️ Tech Stack (Frontend)
+- React  
+- Vite  
+- Tailwind CSS v4  
+- ESLint  
+- Modern Component Architecture
+
+---
+
+## 🚧 Website Status
+The website is currently **under development**.
+
+Upcoming features:
+- Menu Showcase  
+- Gallery  
+- Contact Page with Location Map  
+
