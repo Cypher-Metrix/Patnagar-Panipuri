@@ -1,5 +1,5 @@
-import IntroLinks from "./Shared/_IntroLinks";
-import IntroText from "./Shared/_IntroText";
+import IntroLinks from "../components/shared/_IntroLinks";
+import IntroText from "../components/shared/_IntroText";
 
 export default function TextComponents({ content }) {
 
