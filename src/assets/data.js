@@ -23,3 +23,57 @@ export const HomePageTextContent = {
         },
     ]
 }
+
+import herobanner1 from './herobanner-1.jpeg'
+import herobanner2 from './herobanner-2.jpeg'
+import herobanner3 from './herobanner-3.jpeg'
+
+export const HeroBannerData = {
+    settings: {
+        textAlignment: "left",
+    },
+
+    intoTextContent: {
+        headingTitle: 'Best <span>Panipuri</span> in<br/> Town',
+        headingTitleSize: 'h1',
+        subheading: '',
+        description: 'Experience the authentic taste of crispy puris filled with tangy, spicy water and delicious fillings. Made fresh daily with love!',
+        richTextContent: '<p>Experience the authentic taste of crispy puris filled with tangy, spicy water and delicious fillings. Made fresh daily with love!</p>'
+    },
+    introLinks: [
+        {
+            id: 1,
+            label: 'Explore More',
+            link: '#contact-us'
+        },
+        {
+            id: 2,
+            label: 'Contact Us',
+            link: '#contact-us'
+        }
+    ],
+    shopData: {
+        openingHours: {
+            openTime: '10:00 AM',
+            closeTime: '08:00 PM',
+        },
+        location: 'Gandhinagar, Gujarat'
+    },
+    banners: [
+        {
+            id: 1,
+            title: 'Sample 1',
+            url: herobanner1
+        },
+        {
+            id: 2,
+            title: 'Sample 2',
+            url: herobanner2
+        },
+        {
+            id: 3,
+            title: 'Sample 3',
+            url: herobanner3
+        },
+    ]
+}

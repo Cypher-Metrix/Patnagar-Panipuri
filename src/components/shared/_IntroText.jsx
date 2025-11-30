@@ -25,8 +25,8 @@ export default function IntroText({ intoTextContent, settings }) {
         <>
             {(intoTextContent.headingTitle || intoTextContent.subheading) && (
                 <div className={`title-wrap ${textAlignment} w-full`}>
-                    <h6 className='subheading'>{intoTextContent.subheading}</h6>
-                    <HeadingTag className="heading">{intoTextContent.headingTitle}</HeadingTag>
+                    {intoTextContent.subheading && <h6 className={`subheading ${textAlignment} w-full`}>{intoTextContent.subheading}</h6>}
+                    {intoTextContent.headingTitle && <HeadingTag className={`heading ${textAlignment} w-full`}>{parse(intoTextContent.headingTitle)}</HeadingTag>}
                 </div>)}
 
             {intoTextContent.description && (
