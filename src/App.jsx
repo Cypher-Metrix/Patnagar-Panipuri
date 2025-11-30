@@ -2,8 +2,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
-import { HomePageTextContent } from './assets/data';
-import TextComponents from './components/TextComponent';
+import HeroBanner from './components/HeroBanner';
 
 export default function App() {
 
@@ -18,10 +17,9 @@ export default function App() {
     })
   }, [])
 
-  const content = HomePageTextContent;
   return (
     <>
-      <TextComponents content={content} />
+      <HeroBanner />
     </>
   )
 }

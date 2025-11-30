@@ -21,11 +21,11 @@ export default function IntroLinks({ introLinks, settings }) {
 
     return (
         <>
-            <div className={`buttons-group ${textAlignment}`}>
+            {introLinks && <div className={`buttons-group ${textAlignment}`}>
                 {introLinks?.map((button, index) => (
                     <a href={button?.link} key={index} className={`btn ${index == 0 ? 'button-primary' : 'button-secondary'}`}>{button.label}</a>
                 ))}
-            </div>
+            </div>}
         </>
     )
 }

@@ -50,6 +50,3 @@ body{
 .text-secondary {
   color: var(--text-secondary);
 }
-
-@media (max-width:991px){
-}
