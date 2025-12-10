@@ -77,3 +77,56 @@ export const HeroBannerData = {
         },
     ]
 }
+
+
+export const TestimonialData = {
+    settings: {
+        textAlignment: "center",
+    },
+
+    intoTextContent: {
+        headingTitle: 'Why people choose us ?',
+        headingTitleSize: 'h2',
+        subheading: 'FEATURES',
+        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+    },
+
+    testimonialsData: [
+        {
+            review: "Lorem ipsum dolor sit amet consectetur...",
+            author: "Karan Kumbhare",
+            rating: 4.5,
+            image: "https://images.unsplash.com/photo-1653771926533-380817d3e7b3?w=500"
+        },
+        {
+            review: "Suspendisse aliquet tellus adipiscing...",
+            author: "Aman Singh",
+            rating: 5,
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=500"
+        },
+        {
+            review: "Dignissim nunc facilisi pretium id...",
+            author: "Riya Das",
+            rating: 4,
+            image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500"
+        },
+        {
+            review: "Dignissim nunc facilisi pretium id...",
+            author: "Riya Das",
+            rating: 4,
+            image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500"
+        },
+        {
+            review: "Dignissim nunc facilisi pretium id...",
+            author: "Riya Das",
+            rating: 4,
+            image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500"
+        },
+        {
+            review: "Dignissim nunc facilisi pretium id...Dignissim nunc facilisi pretium id...Dignissim nunc facilisi pretium id...Dignissim nunc facilisi pretium id...",
+            author: "Riya Das",
+            rating: 4,
+            image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500"
+        },
+    ]
+}
