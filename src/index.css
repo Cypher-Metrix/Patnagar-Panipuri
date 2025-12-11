@@ -1,1 +1,128 @@
+@import './App.css';
+@import './css/herobanner.css';
 @import "tailwindcss";
+
+@layer components{
+
+    .body{
+        font-family : Poppins;
+    }
+
+    .container{
+        @apply mx-auto px-5 lg:px-0;
+    }
+
+    .inner-wrap{
+        @apply py-8 lg:py-16;
+    }
+
+    h1{
+        @apply text-4xl lg:text-[3rem] font-bold mb-4 lg:mb-5;
+    }
+
+    h2{
+        @apply text-3xl lg:text-4xl font-bold mb-4 lg:mb-6;
+    }
+
+    h3{
+        @apply text-2xl lg:text-3xl font-medium mb-4 lg:mb-6;
+    }
+
+    h4{
+        @apply text-xl lg:text-2xl font-medium mb-4 lg:mb-6;
+    }
+
+    h5{
+        @apply text-lg lg:text-xl font-medium mb-3 lg:mb-4;
+    }
+
+    h6{
+        @apply text-lg lg:text-lg font-medium mb-1 lg:mb-2;
+    }
+
+    p{
+        @apply text-sm lg:text-base font-normal mb-4 lg:mb-6;
+    }
+
+    .title-wrap{
+        @apply flex flex-col justify-center items-center;
+        .heading{
+            @apply bg-gradient-to-r from-[var(--color-2)] to-[var(--color-3)] bg-clip-text text-transparent;
+        }
+        
+        .subheading{
+            @apply bg-gradient-to-r from-[var(--color-3)] to-[var(--color-4)] bg-clip-text text-transparent text-sm font-semibold;
+        }
+    }
+
+    .description-wrap{
+        p{
+            @apply mb-4 lg:mb-5 last:mb-0;
+        }
+    }
+
+    .rich-text-content{
+        @apply mt-4 lg:mt-5;
+        p{
+            @apply mb-4 lg:mb-5 last:mb-0!;
+        }
+        
+        ul, ol {
+        @apply mb-4 lg:mb-5;
+        
+            li{
+                @apply pl-5 lg:pl-6 mb-4 lg:mb-5 last:mb-0 leading-6 text-sm lg:text-base relative;
+                
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 12px;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    border-width: 2px;
+                    background-color: var(--primary-text);
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        iframe{
+            @apply w-full max-w-full h-auto;
+        }
+
+        .two-per-row{
+            @apply grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5;
+        }
+
+        img{
+            @apply w-full h-auto;
+        }
+    }
+    .buttons-group{
+        @apply flex flex-wrap items-center gap-4 lg:gap-5 lg:mt-8 mt-6;
+
+        .btn{
+            @apply lg:px-3 lg:py-2 py-1.5 px-2.5 rounded shadow-md hover:shadow-none text-sm lg:text-base font-medium transition-colors duration-300 ;
+
+            &.button-primary{
+                @apply bg-linear-to-r from-[var(--color-2)] to-[var(--color-3)] text-[var(--color-1)];
+
+                &:hover{
+                    @apply bg-clip-text text-transparent transition-colors duration-500;
+                }
+            }
+
+            &.button-secondary{
+                @apply bg-linear-to-r from-[var(--color-2)] shadow-none to-[var(--color-3)] bg-clip-text text-transparent;
+
+                 &:hover {
+                    @apply text-[var(--color-1)] bg-linear-90 from-[var(--color-2)] to-[var(--color-3)];
+                    -webkit-background-clip: border-box;
+                    background-clip: border-box;
+                }
+            }
+        }
+    }
+}

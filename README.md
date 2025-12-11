@@ -1,6 +1,6 @@
 # 🥙 Patnagar Panipuri — Gandhinagar, Gujarat  
 **Website Status:** _Under Development_  
-🔗 **Live URL:** _https://patnagar-panipuri.in_ (Coming Soon)
+🔗 **Live URL:** _https://patnagar.com_ (Coming Soon)
 
 Patnagar Panipuri is a modern and hygienic street-food experience in **Gandhinagar, Gujarat**, offering fresh, flavorful **Panipuri**, delicious chaats, and refreshing beverages.  
 This repository contains the source code of the official **Patnagar Panipuri Website**, built with **React**, **Vite**, and **Tailwind CSS**.
