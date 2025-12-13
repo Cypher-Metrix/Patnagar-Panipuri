@@ -1,0 +1,7 @@
+.features-section{
+    .description-wrap{
+        p{
+            @apply w-9/12 mx-auto;
+        }
+    }
+}

@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import './App.css';
 import HeroBanner from './components/HeroBanner';
 import Feature from './components/Feature';
+import Testimonial from './components/Testimonial';
 
 export default function App() {
 
@@ -21,6 +22,7 @@ export default function App() {
   return (
     <>
       <HeroBanner />
+      <Testimonial />
       <Feature />
     </>
   )
