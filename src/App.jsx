@@ -5,6 +5,7 @@ import './App.css';
 import HeroBanner from './components/HeroBanner';
 import Feature from './components/Feature';
 import Testimonial from './components/Testimonial';
+import Counter from './components/Counter';
 
 export default function App() {
 
@@ -24,6 +25,7 @@ export default function App() {
       <HeroBanner />
       <Testimonial />
       <Feature />
+      <Counter />
     </>
   )
 }
