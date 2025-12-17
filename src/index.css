@@ -2,6 +2,7 @@
 @import './css/herobanner.css';
 @import "./css/testimonial.css";
 @import "./css/features.css";
+@import "./css/counter.css";
 @import "tailwindcss";
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";

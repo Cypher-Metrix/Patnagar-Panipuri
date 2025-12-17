@@ -5,6 +5,9 @@ import herobanner3 from './herobanner-3.jpeg'
 import { PiUsersThree } from 'react-icons/pi'
 import { CiHeart } from 'react-icons/ci'
 import { HiSparkles } from 'react-icons/hi'
+import { MdMenuBook } from 'react-icons/md'
+import { BsClockHistory } from 'react-icons/bs'
+import { FaRegStar } from 'react-icons/fa'
 
 export const HomePageTextContent = {
     settings: {
@@ -193,6 +196,45 @@ export const FeatureSectionData = {
             icon: <HiSparkles className="w-8 h-8 text-blue-600" />,
             borderColor: "border-blue-200",
             bgColor: "bg-blue-100",
+        },
+    ]
+}
+
+export const CounterSectionData = {
+    settings: {
+        textAlignment: "center",
+    },
+
+    intoTextContent: {
+        // headingTitle: 'Why people choose us ?',
+        // headingTitleSize: 'h2',
+        // subheading: 'FEATURES',
+        // description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+    },
+    counterData: [
+        {
+            title: "10+",
+            description: "Years Experience",
+            icon: BsClockHistory,
+            color: 'text-orange-500'
+        },
+        {
+            title: "10K+",
+            description: "Happy Customers",
+            icon: PiUsersThree,
+            color: 'text-orange-500'
+        },
+        {
+            title: "20+",
+            description: "Menu Items",
+            icon: MdMenuBook,
+            color: 'text-orange-500'
+        },
+        {
+            title: "4.9",
+            description: "Average Rating",
+            icon: FaRegStar,
+            color: 'text-orange-500'
         },
     ]
 }
