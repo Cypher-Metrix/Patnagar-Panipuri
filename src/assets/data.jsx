@@ -2,6 +2,7 @@ import { FaAward, FaFireFlameCurved, FaRegClock } from 'react-icons/fa6'
 import herobanner1 from './herobanner-1.jpeg'
 import herobanner2 from './herobanner-2.jpeg'
 import herobanner3 from './herobanner-3.jpeg'
+import newsletterBG from './newsletter-bg.png'
 import { PiUsersThree } from 'react-icons/pi'
 import { CiHeart } from 'react-icons/ci'
 import { HiSparkles } from 'react-icons/hi'
@@ -237,4 +238,26 @@ export const CounterSectionData = {
             color: 'text-orange-500'
         },
     ]
+}
+
+export const NewsLetterData = {
+    settings: {
+        left: "center",
+    },
+
+    intoTextContent: {
+        headingTitle: 'Subscribe Our Newsletter',
+        headingTitleSize: 'h2',
+        subheading: 'NEWS LETTER',
+        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+    },
+    introLinks: [
+        {
+            id: 1,
+            label: 'Primary Button',
+            link: '/'
+        },
+
+    ],
+    backgroundImage: newsletterBG
 }
