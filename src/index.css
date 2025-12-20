@@ -112,6 +112,10 @@
         .btn{
             @apply lg:px-3 lg:py-2 py-1.5 px-2.5 rounded shadow-md hover:shadow-none text-sm lg:text-base font-medium transition-colors duration-300 ;
 
+            &:disabled{
+                @apply pointer-events-none opacity-50;
+            }
+
             &.button-primary{
                 @apply bg-linear-to-r from-[var(--color-2)] to-[var(--color-3)] text-[var(--color-1)];
 

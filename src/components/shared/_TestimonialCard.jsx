@@ -1,8 +1,7 @@
-import { CiStar } from "react-icons/ci";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { useState } from "react";
 
-export default function TestimonialCard({ testimonialContent, key }) {
+export default function TestimonialCard({ testimonialContent }) {
 
     const { review, author, image, rating } = testimonialContent;
     const [expanded, setExpanded] = useState(false);
@@ -10,7 +9,7 @@ export default function TestimonialCard({ testimonialContent, key }) {
     const totalStars = 5;
 
     return (
-        <div key={key} className="w-full bg-slate-200 rounded-3xl testimonial-card mb-12 transition-all duration-300">
+        <div className="w-full bg-slate-200 rounded-3xl testimonial-card mb-12 transition-all duration-300">
             <div className="testimonial-quote-icon bg-slate-300">
                 <BiSolidQuoteAltLeft className="text-slate-600" />
             </div>
@@ -28,7 +27,7 @@ export default function TestimonialCard({ testimonialContent, key }) {
                     <div className="flex justify-center gap-0.5">
                         {Array.from({ length: totalStars }).map((_, index) => (
                             index < rating ? (
-                                <span className="h-6 w-6">
+                                <span className="h-6 w-6" key={index}>
                                     <svg className="h-full w-full" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clipPath="url(#clip0_1_187)">
                                             <path d="M10.125 14.5716L15.3394 17.7188L13.9556 11.7872L18.5625 7.79625L12.4959 7.28156L10.125 1.6875L7.75406 7.28156L1.6875 7.79625L6.29437 11.7872L4.91063 17.7188L10.125 14.5716Z" className="fill-yellow-500" />
