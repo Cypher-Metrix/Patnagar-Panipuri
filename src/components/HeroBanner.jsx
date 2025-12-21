@@ -30,7 +30,6 @@ export default function HeroBanner() {
         return nowMinutes >= openMinutes && nowMinutes < closeMinutes;
     }
 
-    console.log(shopData.openingHours)
     const open = isShopOpen(shopData?.openingHours?.openTime, shopData?.openingHours?.closeTime);
 
     return (

@@ -1,0 +1,15 @@
+.newsletter-section{
+    .title-wrap{
+        .subheading{
+            @apply text-gray-300 bg-none shadow-none;
+        }
+        .heading{
+            @apply text-slate-200 shadow-none bg-none;
+        }
+    }
+    .description-wrap{
+        p{
+            @apply lg:w-7/12 text-white;
+        }
+    }
+}
