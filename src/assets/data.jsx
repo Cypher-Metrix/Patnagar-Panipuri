@@ -9,6 +9,12 @@ import { HiSparkles } from 'react-icons/hi'
 import { MdMenuBook } from 'react-icons/md'
 import { BsClockHistory } from 'react-icons/bs'
 import { FaRegStar } from 'react-icons/fa'
+import {
+    FaMapMarkerAlt,
+    FaPhoneAlt,
+    FaEnvelope,
+} from "react-icons/fa";
+import { SiZomato, SiFacebook, SiInstagram } from "react-icons/si";
 
 export const HomePageTextContent = {
     settings: {
@@ -240,24 +246,82 @@ export const CounterSectionData = {
     ]
 }
 
-export const NewsLetterData = {
-    settings: {
-        left: "center",
-    },
-
-    intoTextContent: {
-        headingTitle: 'Subscribe Our Newsletter',
-        headingTitleSize: 'h2',
-        subheading: 'NEWS LETTER',
-        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
-    },
-    introLinks: [
+export const footerData = {
+    storeName: "Panipuri Store",
+    storeDescription: "Serving authentic and delicious panipuri since 2023.",
+    socialLinks: [
+        {
+            id: 0,
+            name: "Zomato",
+            icon: SiZomato,
+            link: "https://zomato.onelink.me/xqzv/4euxppzx",
+            colorClass: 'text-var[--color-6] hover:text-red-700'
+        },
         {
             id: 1,
-            label: 'Primary Button',
-            link: '/'
+            name: "Instagram",
+            icon: SiInstagram,
+            link: "https://zomato.onelink.me/xqzv/4euxppzx",
+            colorClass: 'text-var[--color-6] hover:text-red-600'
         },
-
+        {
+            id: 2,
+            name: "Facebook",
+            icon: SiFacebook,
+            link: "https://zomato.onelink.me/xqzv/4euxppzx",
+            colorClass: 'text-var[--color-6] hover:text-blue-700'
+        }
     ],
-    backgroundImage: newsletterBG
-}
+    quickLinks: {
+        heading: 'Quick Links',
+        links: [
+            {
+                id: 0,
+                label: 'About Us',
+                link: '#herobanner'
+            },
+            {
+                id: 1,
+                label: 'Gallery',
+                link: '#gallery'
+            },
+            {
+                id: 2,
+                label: 'Reviews',
+                link: '#testimonial'
+            },
+            {
+                id: 3,
+                label: 'Menus',
+                link: '#menu'
+            },
+        ]
+    },
+    contactsLinks: {
+        heading: `Contact Us`,
+        links: [
+            {
+                id: 0,
+                icon: FaMapMarkerAlt,
+                link: `https://maps.app.goo.gl/zrSjtKW3hwEpUTDy9?g_st=aw`,
+                label: `Unit No. G/2, Lal Bhuvan Complex,
+                            Plot No. 493/2, near GH6 Pujya Mota
+                            Circle, Sector 22, Gandhinagar,
+                            Gujarat 382021`
+            },
+            {
+                id: 1,
+                icon: FaPhoneAlt,
+                link: `tel:+919664864133`,
+                label: `+91 96648 64133`
+            },
+            {
+                id: 0,
+                icon: FaEnvelope,
+                link: `mailto:patnagarpanipuri@gmail.com`,
+                label: `patnagarpanipuri@gmail.com`
+            }
+        ]
+    },
+    copyrightText: "2025 Patnagar Panipuri. All rights reserved."
+};
