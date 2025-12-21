@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
 
-:root{
-    --color-1: #FFFBFF;
-    --color-2: #EEF0F2;
-    --color-2: #601A05;
+:root {
+    --color-1: #fffbff;
+    --color-2: #eef0f2;
+    --color-2: #601a05;
     --color-3: #ff1f1f;
     --color-4: #ff7401;
-    --color-5: #70AD47;
+    --color-5: #70ad47;
     --color-6: #171717;
     --color-7: #000000;
 
@@ -19,7 +19,11 @@
     --text-secondary: var(--color-6);
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-size: 16px;
@@ -29,24 +33,24 @@ body{
 }
 
 .bg-gradient {
-  background: linear-gradient(135deg, var(--orange), var(--red));
-  color: var(--white);
+    background: linear-gradient(135deg, var(--orange), var(--red));
+    color: var(--white);
 }
 
 .bg-primary {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
 }
 
 .bg-secondary {
-  background-color: var(--bg-secondary);
-  color: var(--text-secondary);
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
 }
 
 .text-primary {
-  color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 .text-secondary {
-  color: var(--text-secondary);
+    color: var(--text-secondary);
 }
