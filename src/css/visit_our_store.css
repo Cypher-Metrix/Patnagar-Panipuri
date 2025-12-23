@@ -1,0 +1,4 @@
+.contact-card:hover .contact-icon {
+    transform: scale(1.15);
+    transition: transform 0.15s cubic-bezier(.4,0,.2,1);
+}

@@ -6,6 +6,7 @@ import HeroBanner from "./components/HeroBanner";
 import Feature from "./components/Feature";
 import Testimonial from "./components/Testimonial";
 import Counter from "./components/Counter";
+import VisitOurStore from "./components/VisitOurStore";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
             <Testimonial />
             <Feature />
             <Counter />
+            <VisitOurStore/>
             <Footer />
         </>
     );
