@@ -43,21 +43,35 @@ export default function Testimonial() {
     const isNextDisabled = currentSlide >= totalSlides - visibleSlides;
 
     return (
-        <section className="testimonial-section bg-gray-100" id="testimonial">
+        <section className="testimonial-section bg-gray-100 overflow-hidden" id="testimonial"
+            data-aos="fade-up"
+        >
             <div className="inner-wrap">
                 <div className="container relative">
+                    <div
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <IntroText intoTextContent={intoTextContent} settings={settings} />
+                    </div>
 
-                    <IntroText intoTextContent={intoTextContent} settings={settings} />
+                    <div className="w-full mt-5"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
 
-                    <div className="w-full mt-5">
+                    >
                         <Slider ref={sliderRef} {...slickSettings}>
-                            {testimonialsData.map((item, idx) => (
-                                <TestimonialCard key={item.id} testimonialContent={item} />
+                            {testimonialsData.map((item) => (
+                                <div className="w-full h-full" key={item.id}>
+                                    <TestimonialCard testimonialContent={item} />
+                                </div>
                             ))}
                         </Slider>
                     </div>
 
-                    <div className="w-full flex gap-4 justify-center lg:justify-end">
+                    <div className="w-full flex gap-4 justify-center lg:justify-end"
+                        data-aos="fade-left"
+                    >
 
                         {/* Prev Button */}
                         <button

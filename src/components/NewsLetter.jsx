@@ -59,7 +59,7 @@ export default function NewsLetter() {
                 toast.error('Failed to subscribe. Please try again.')
             }
         } catch (err) {
-            toast.error('Network error. Please try again.')
+            toast.error('Network error. Please try again.', err.message);
         } finally {
             setLoading(false)
         }

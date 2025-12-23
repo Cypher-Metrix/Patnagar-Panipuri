@@ -7,16 +7,15 @@ import Feature from "./components/Feature";
 import Testimonial from "./components/Testimonial";
 import Counter from "./components/Counter";
 import Footer from "./components/Footer";
+import NewsLetter from "./components/NewsLetter";
 
 export default function App() {
     useEffect(() => {
         AOS.init({
             startEvent: "DOMContentLoaded",
-            delay: 100,
-            easing: "ease",
+            delay: 1000,
+            easing: "ease-out-cubic",
             once: false,
-            mirror: false,
-            anchorPlacement: "top-bottom",
         });
     }, []);
 
@@ -26,6 +25,7 @@ export default function App() {
             <Testimonial />
             <Feature />
             <Counter />
+            <NewsLetter />
             <Footer />
         </>
     );

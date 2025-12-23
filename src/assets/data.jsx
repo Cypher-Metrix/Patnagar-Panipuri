@@ -246,6 +246,20 @@ export const CounterSectionData = {
     ]
 }
 
+export const NewsLetterData = {
+    settings: {
+        textAlignment: "left",
+    },
+
+    intoTextContent: {
+        headingTitle: 'NEWSLETTER',
+        headingTitleSize: 'h2',
+        subheading: 'Subscribe',
+        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+    },
+    backgroundImage: newsletterBG
+}
+
 export const footerData = {
     storeName: "Panipuri Store",
     storeDescription: "Serving authentic and delicious panipuri since 2023.",
