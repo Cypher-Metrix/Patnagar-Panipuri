@@ -6,15 +6,16 @@ import newsletterBG from './newsletter-bg.png'
 import { PiUsersThree } from 'react-icons/pi'
 import { CiHeart } from 'react-icons/ci'
 import { HiSparkles } from 'react-icons/hi'
-import { MdMenuBook } from 'react-icons/md'
+import { MdMenuBook, MdOutlineMail, MdOutlineLocationOn, MdOutlineWatchLater } from 'react-icons/md'
 import { BsClockHistory } from 'react-icons/bs'
-import { FaRegStar } from 'react-icons/fa'
 import {
+    FaRegStar,
     FaMapMarkerAlt,
     FaPhoneAlt,
     FaEnvelope,
 } from "react-icons/fa";
 import { SiZomato, SiFacebook, SiInstagram } from "react-icons/si";
+import { FiPhone } from "react-icons/fi";
 
 import itm1 from "./itm1.png"
 import itm2 from "./itm2.png"
@@ -332,6 +333,41 @@ export const footerData = {
     copyrightText: "2025 Patnagar Panipuri. All rights reserved."
 };
 
+export const visitOurStoreDatas = {
+    settings: {
+        textAlignment: "center",
+    },
+
+    intoTextContent: {
+        headingTitle: 'Visit Our Store',
+        headingTitleSize: 'h2',
+        subheading: 'FEATURES',
+        description: 'Come experience the authentic taste in person',
+    },
+
+    visitOurStoreData: [
+        {
+            icon: MdOutlineLocationOn,
+            title: "Address",
+            content: "Unit No. G/2, Lal Bhuvan Complex, Plot No. 493/2, near GH6 Pujya Mota Circle, Sector 22, Gandhinagar, Gujarat 382021"
+        },
+        {
+            icon: FiPhone,
+            title: "Phone",
+            content: "+91 9664864133"
+        },
+        {
+            icon: MdOutlineMail,
+            title: "E-mail",
+            content: "patnagarpanipuri@gmail.com"
+        },
+        {
+            icon: MdOutlineWatchLater,
+            title: "Open Hours",
+            content: "Everyday: 10:00 AM - 7:00 PM"
+        },
+    ]
+}
 export const menuItems = [
     {
         id: 1,
