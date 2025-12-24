@@ -16,6 +16,12 @@ import {
 } from "react-icons/fa";
 import { SiZomato, SiFacebook, SiInstagram } from "react-icons/si";
 
+import itm1 from "./itm1.png"
+import itm2 from "./itm2.png"
+import itm3 from "./itm3.png"
+import itm4 from "./itm4.png"
+
+
 export const HomePageTextContent = {
     settings: {
         textAlignment: "center",
@@ -325,3 +331,30 @@ export const footerData = {
     },
     copyrightText: "2025 Patnagar Panipuri. All rights reserved."
 };
+
+export const menuItems = [
+    {
+        id: 1,
+        title: "Delicious Noodles",
+        desc: "Flour, Sugar, Butter, Milk, Eggs, Baking Powder",
+        image: itm1
+    },
+    {
+        id: 2,
+        title: "Healthy Pasta",
+        desc: "Baking Powder, Vanilla, Milk, Caster Sugar",
+        image: itm2,
+    },
+    {
+        id: 3,
+        title: "Spicy Noodles",
+        desc: "Berries, Sugar, Lemon Juice, Cornstarch",
+        image: itm3,
+    },
+    {
+        id: 4,
+        title: "Salmon Sushi",
+        desc: "Ramen always consists of soup and noodles",
+        image: itm4
+    },
+];

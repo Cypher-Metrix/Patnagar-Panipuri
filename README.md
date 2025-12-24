@@ -51,6 +51,5 @@ The website is currently **under development**.
 
 Upcoming features:
 - Menu Showcase  
-- Gallery  
 - Contact Page with Location Map  
 
