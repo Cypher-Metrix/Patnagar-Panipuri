@@ -33,27 +33,20 @@ export default function HeroBanner() {
     const open = isShopOpen(shopData?.openingHours?.openTime, shopData?.openingHours?.closeTime);
 
     return (
-        <section className='hero-banner-section' id='herobanner' data-aos="fade-up">
+        <section className='hero-banner-section' id='herobanner'>
             <div className='inner-wrap'>
                 <div className='container'>
                     <div className='w-full flex flex-wrap gap-5 lg:gap-0 items-center justify-center sm:-mx-3'>
-                        <div className='w-full lg:w-1/2 sm:px-3' data-aos="fade-up"
-                            data-aos-delay="150">
+                        <div className='w-full lg:w-1/2 sm:px-3'>
                             {shopData.openingHours &&
-                                <div className='p-2.5 px-4 inline-flex items-center justify-start gap-2.5 bg-gray-100/20 rounded-4xl mb-2.5 lg:mb-5'
-                                    data-aos="fade-up"
-                                    data-aos-delay="450"
-                                >
+                                <div className='p-2.5 px-4 inline-flex items-center justify-start gap-2.5 bg-gray-100/20 rounded-4xl mb-2.5 lg:mb-5'>
                                     <div className={`h-2 w-2 rounded-full ${open ? "bg-green-600" : 'bg-red-600'}`} />
                                     <p className='mb-0 text-sm'>{open ? "Open Now" : 'Closed'}</p>
                                 </div>}
                             <IntroText intoTextContent={intoTextContent} settings={settings} />
                             <IntroLinks introLinks={introLinks} settings={settings} />
                             {(shopData.openingHours || shopData.location) &&
-                                <div className='flex flex-col items-start justify-center pt-7'
-                                    data-aos="fade-up"
-                                    data-aos-delay="650"
-                                >
+                                <div className='flex flex-col items-start justify-center pt-7'>
                                     <div className='w-full mb-7 h-px bg-gray-500' />
                                     <div className='flex items-center justify-start gap-2.5 md:gap-6'>
                                         {shopData?.openingHours && <div className='flex items-center justify-center gap-2.5'>
@@ -73,12 +66,8 @@ export default function HeroBanner() {
                                     </div>
                                 </div>}
                         </div>
-                        <div className='w-full lg:w-1/2 sm:px-3' data-aos="fade-up"
-                            data-aos-delay="300">
-                            <div className='w-full flex lg:flex-row flex-col items-center gap-3 lg:gap-5'
-                                data-aos="fade-up"
-                                data-aos-delay="750"
-                            >
+                        <div className='w-full lg:w-1/2 sm:px-3'>
+                            <div className='w-full flex lg:flex-row flex-col items-center gap-3 lg:gap-5'>
                                 <div className='w-full lg:w-1/2 flex lg:flex-col items-center gap-3 lg:gap-5'>
                                     {banners.length > 0 && banners.slice(0, 2).map((item) => (
                                         <div className={`hero-banner-image`} key={item.id}>
