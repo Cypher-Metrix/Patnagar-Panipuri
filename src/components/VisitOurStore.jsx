@@ -1,57 +1,81 @@
-import { visitOurStoreDatas } from "../assets/data";
+import { VisitOurStoreDatas } from "../assets/data";
 import IntroText from "./shared/_IntroText";
+import { motion } from "framer-motion";
 
-
-export default function VisitOurStore(){
-    const { intoTextContent, settings, visitOurStoreData} = visitOurStoreDatas;
+export default function VisitOurStore() {
+    const { intoTextContent, settings, visitOurStoreData } = VisitOurStoreDatas;
 
     return (
         <section className="visit-our-store-section bg-white" id="visit-our-store">
-            <div className="inner-wrap">
-                <div className="container relative">
-
+            <div className="inner-wrap relative lg:pb-0">
+                <motion.div
+                    className="container"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                    viewport={{ once: false }}
+                >
                     <IntroText intoTextContent={intoTextContent} settings={settings} />
-
-                    <div className="flex gap-4 justify-center bg-orange-50 flex-wrap mt-10">
-                        <div className="w-full lg:w-1/2 max-w-2xl h-screen">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.0615745227556!2d72.65752080000001!3d23.240846299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b2667735d97%3A0xd72c00a234bda722!2sPatnagar%20Panipuri!5e0!3m2!1sen!2sin!4v1766425762071!5m2!1sen!2sin" loading="lazy" className="w-full h-screen"></iframe>
-                        </div>
-
-                        <div className="flex flex-col gap-6 max-w-2xl mx-auto bg-white rounded-xl shadow-md p-8 m-auto">
-                            <div>
-                                <h2 className="text-4xl font-bold m-0">
-                                    Contact Information
-                                </h2>
-
-                                <p className="text-base mb-1 max-w-sm">
-                                    Reach out to us through any of these channels. We're always happy to help!
-                                </p>
-                            </div>
-                            {visitOurStoreData.map((item, idx) => (
-                                <div key={idx} className="flex flex-wrap items-start gap-5 bg-orange-50 rounded-2xl px-6 py-5 contact-card">
-                                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center contact-icon">
-                                        {item.icon && (
-                                            <item.icon
-                                                size={22}
-                                                className="text-white"
-                                            />
-                                        )}
-                                    </div>
-
-                                    <div className="flex flex-col flex-1">
-                                        <h3 className="text-gray-900 text-lg font-medium leading-none mb-1">
-                                            {item.title}
-                                        </h3>
-                                        <p className="text-gray-700 text-sm max-w-lg leading-none m-0 break-words">
-                                            {item.content}
+                </motion.div>
+                <div className="relative mt-12">
+                    <motion.div className="w-full lg:w-1/2 lg:h-full h-[450px] lg:absolute left-0 top-0"
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.7 }}
+                        viewport={{ once: false }}
+                    >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.061439656849!2d72.65494587406414!3d23.24085120814964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b2667735d97%3A0xd72c00a234bda722!2sPatnagar%20Panipuri!5e0!3m2!1sen!2sin!4v1766768307748!5m2!1sen!2sin" allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer"
+                            sandbox="allow-scripts allow-same-origin allow-popups"
+                            className="w-full border-0 h-full"></iframe>
+                    </motion.div>
+                    <div className="container relative">
+                        <motion.div className="flex justify-end mt-12"
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.7 }}
+                            viewport={{ once: false }}
+                        >
+                            <div className="w-full lg:w-1/2">
+                                <div className="w-full flex flex-col items-start justify-start gap-8 lg:py-10">
+                                    <div className="lg:pl-10 flex flex-col gap-2.5 lg:gap-5 items-start justify-start">
+                                        <h2 className="text-2xl lg:text-4xl font-bold m-0 text-gray-700">
+                                            {visitOurStoreData?.heading}
+                                        </h2>
+                                        <p className="text-base lg:text-lg mb-0 text-gray-500">
+                                            {visitOurStoreData?.description}
                                         </p>
                                     </div>
+                                    <div className="lg:pl-10 flex flex-col gap-6 items-start justify-start">
+                                        {visitOurStoreData.contacts?.map((item, idx) => (
+                                            <div key={idx} className="flex items-start gap-5">
+                                                <div className="shrink-0 w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center contact-icon">
+                                                    {item.icon && (
+                                                        <item.icon
+                                                            size={24}
+                                                            className="text-white"
+                                                        />
+                                                    )}
+                                                </div>
+
+                                                <div className="flex flex-col items-start justify-start">
+                                                    <h3 className="text-gray-900 text-xl lg:text-2xl font-medium leading-none mb-1">
+                                                        {item.title}
+                                                    </h3>
+                                                    <p className="text-gray-700 text-sm lg:text-base mb-0">
+                                                        {item.content}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

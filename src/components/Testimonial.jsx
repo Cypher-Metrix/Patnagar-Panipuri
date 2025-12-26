@@ -4,6 +4,7 @@ import TestimonialCard from "./shared/_TestimonialCard";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import { TestimonialData } from "../assets/data";
 import IntroText from "./shared/_IntroText";
+import { motion } from "framer-motion";
 
 export default function Testimonial() {
 
@@ -46,9 +47,21 @@ export default function Testimonial() {
         <section className="testimonial-section bg-gray-100 overflow-hidden" id="testimonial">
             <div className="inner-wrap">
                 <div className="container relative">
-                    <IntroText intoTextContent={intoTextContent} settings={settings} />
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.7 }}
+                        viewport={{ once: false }}
+                    >
+                        <IntroText intoTextContent={intoTextContent} settings={settings} />
+                    </motion.div>
 
-                    <div className="w-full mt-5">
+                    <motion.div className="w-full mt-5"
+                        initial={{ opacity: 0, x: 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.7 }}
+                        viewport={{ once: false }}
+                    >
                         <Slider ref={sliderRef} {...slickSettings}>
                             {testimonialsData.map((item) => (
                                 <div className="w-full h-full" key={item.id}>
@@ -56,7 +69,7 @@ export default function Testimonial() {
                                 </div>
                             ))}
                         </Slider>
-                    </div>
+                    </motion.div>
 
                     <div className="w-full flex gap-4 justify-center lg:justify-end"
                     >

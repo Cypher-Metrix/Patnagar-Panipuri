@@ -1,4 +1,5 @@
 import { footerData } from "../assets/data";
+import { motion } from "framer-motion";
 
 const Footer = () => {
     const { storeName, storeDescription, socialLinks, quickLinks, contactsLinks, copyrightText } = footerData;
@@ -7,7 +8,12 @@ const Footer = () => {
             <div className="inner-wrap">
                 <div className="container">
                     <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-5 pb-8">
-                        <div className="flex flex-col items-start justify-start gap-4">
+                        <motion.div className="flex flex-col items-start justify-start gap-4"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7 }}
+                            viewport={{ once: false }}
+                        >
                             <div className="title-wrap">
                                 <h4 className="heading mb-0 font-bold">{storeName}</h4>
                             </div>
@@ -23,9 +29,14 @@ const Footer = () => {
                                 ))}
                             </div>
 
-                        </div>
+                        </motion.div>
 
-                        <div className="flex flex-col items-start justify-start gap-4">
+                        <motion.div className="flex flex-col items-start justify-start gap-4"
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                            viewport={{ once: false }}
+                        >
                             <div className="title-wrap">
                                 <h4 className="heading mb-0 font-bold">{quickLinks?.heading}</h4>
                             </div>
@@ -36,9 +47,14 @@ const Footer = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </motion.div>
 
-                        <div className="flex flex-col items-start justify-start gap-4">
+                        <motion.div className="flex flex-col items-start justify-start gap-4"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.9 }}
+                            viewport={{ once: false }}
+                        >
                             <div className="title-wrap">
                                 <h4 className="heading mb-0 font-bold">{contactsLinks.heading}</h4>
                             </div>
@@ -54,12 +70,17 @@ const Footer = () => {
                                     ))}
                                 </ul>
                             </ul>
-                        </div>
+                        </motion.div>
                     </div>
 
-                    <div className="copyright pt-8 flex items-center justify-center border-t border-gray-400/50">
+                    <motion.div className="copyright pt-8 flex items-center justify-center border-t border-gray-400/50"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7 }}
+                        viewport={{ once: false }}
+                    >
                         <p className="mb-0 font-medium">&copy; {copyrightText}</p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </footer>

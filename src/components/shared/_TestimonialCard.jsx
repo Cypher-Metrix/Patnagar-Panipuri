@@ -1,5 +1,6 @@
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function TestimonialCard({ testimonialContent }) {
 
@@ -28,7 +29,12 @@ export default function TestimonialCard({ testimonialContent }) {
                         {Array.from({ length: totalStars }).map((_, index) => {
                             const isFilled = index < rating;
                             return (
-                                <span className="h-6 w-6" key={index} >
+                                <motion.div className="h-6 w-6" key={index}
+                                    initial={{ rotate: 180 }}
+                                    whileInView={{ rotate: 360 }}
+                                    transition={{ duration: 1 }}
+                                    viewport={{ once: false }}
+                                >
                                     {isFilled ?
                                         (
                                             <svg className="h-full w-full" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +65,7 @@ export default function TestimonialCard({ testimonialContent }) {
                                             </svg>
                                         )
                                     }
-                                </span>
+                                </motion.div>
                             )
                         })}
                     </div>

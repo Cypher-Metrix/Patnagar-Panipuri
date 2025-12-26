@@ -1,8 +1,10 @@
+import { motion } from "framer-motion";
 import { HeroBannerData } from '../assets/data'
 import IntroLinks from './shared/_IntroLinks';
 import IntroText from './shared/_IntroText';
 import { FiClock } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
+
 
 export default function HeroBanner() {
 
@@ -11,7 +13,6 @@ export default function HeroBanner() {
     function isShopOpen(openTimeStr, closeTimeStr) {
         const now = new Date();
 
-        // Helper: Convert "10:00 AM" → minutes since midnight
         const toMinutes = (timeStr) => {
             const [time, modifier] = timeStr.split(" ");
             let [hours, minutes] = time.split(":").map(Number);
@@ -37,7 +38,12 @@ export default function HeroBanner() {
             <div className='inner-wrap'>
                 <div className='container'>
                     <div className='w-full flex flex-wrap gap-5 lg:gap-0 items-center justify-center sm:-mx-3'>
-                        <div className='w-full lg:w-1/2 sm:px-3'>
+                        <motion.div className='w-full lg:w-1/2 sm:px-3'
+                            initial={{ opacity: 0, y: 80 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7 }}
+                            viewport={{ once: false }}
+                        >
                             {shopData.openingHours &&
                                 <div className='p-2.5 px-4 inline-flex items-center justify-start gap-2.5 bg-gray-100/20 rounded-4xl mb-2.5 lg:mb-5'>
                                     <div className={`h-2 w-2 rounded-full ${open ? "bg-green-600" : 'bg-red-600'}`} />
@@ -65,10 +71,16 @@ export default function HeroBanner() {
                                         </div>}
                                     </div>
                                 </div>}
-                        </div>
-                        <div className='w-full lg:w-1/2 sm:px-3'>
+                        </motion.div>
+                        <motion.div className='w-full lg:w-1/2 sm:px-3'
+                            initial={{ opacity: 0, y: 80 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7 }}
+                            viewport={{ once: false }}
+                        >
                             <div className='w-full flex lg:flex-row flex-col items-center gap-3 lg:gap-5'>
-                                <div className='w-full lg:w-1/2 flex lg:flex-col items-center gap-3 lg:gap-5'>
+                                <div className='w-full lg:w-1/2 flex lg:flex-col items-center gap-3 lg:gap-5'
+                                >
                                     {banners.length > 0 && banners.slice(0, 2).map((item) => (
                                         <div className={`hero-banner-image`} key={item.id}>
                                             <div className='hero-banner-image-overlay' />
@@ -85,7 +97,7 @@ export default function HeroBanner() {
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

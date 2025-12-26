@@ -3,12 +3,11 @@
 @import "./css/testimonial.css";
 @import "./css/features.css";
 @import "./css/counter.css";
-<<<<<<< HEAD
 @import "./css/newsletter.css";
-=======
 @import "./css/visit_our_store.css";
->>>>>>> origin/develop
 @import "./css/footer.css";
+@import "./css/menus.css";
+@import "./css/gallery.css";
 @import "tailwindcss";
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
@@ -16,6 +15,10 @@
 @layer components {
     .body {
         font-family: Poppins;
+    }
+
+    section{
+        overflow: hidden;
     }
 
     .container {

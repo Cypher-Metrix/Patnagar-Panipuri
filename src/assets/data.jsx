@@ -253,6 +253,68 @@ export const CounterSectionData = {
     ]
 }
 
+export const OurMenuData = {
+    settings: {
+        textAlignment: "center",
+    },
+
+    intoTextContent: {
+        headingTitle: 'Our Delicious Menu',
+        headingTitleSize: 'h2',
+        subheading: '',
+        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+    },
+    menuItems: [
+        {
+            id: 1,
+            title: "Delicious Noodles",
+            desc: "Flour, Sugar, Butter, Milk, Eggs, Baking Powder",
+            image: itm1
+        },
+        {
+            id: 2,
+            title: "Healthy Pasta",
+            desc: "Baking Powder, Vanilla, Milk, Caster Sugar",
+            image: itm2,
+        },
+        {
+            id: 3,
+            title: "Spicy Noodles",
+            desc: "Berries, Sugar, Lemon Juice, Cornstarch",
+            image: itm3,
+        },
+        {
+            id: 4,
+            title: "Salmon Sushi",
+            desc: "Ramen always consists of soup and noodles",
+            image: itm4
+        },
+    ]
+}
+export const GalleryData = {
+    settings: {
+        textAlignment: "center",
+    },
+
+    intoTextContent: {
+        headingTitle: 'Our Gallery',
+        headingTitleSize: 'h2',
+        subheading: '',
+        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+    },
+    images: [
+        "https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp",
+        "https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80",
+        "https://tinypng.com/images/social/website.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzY4ZhdaTaeaDiMrEl_YRU8_8txhzBh2hQcA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA-7UIYLcEK1mAwct1XgW8aSMnvm3ZEQBYgQ&s",
+        "https://burst.shopifycdn.com/photos/beach-sunset-thailand.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+        "https://img.freepik.com/free-photo/beautiful-lake-mountains_395237-44.jpg?semt=ais_hybrid&w=740&q=80",
+        "https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "https://media.istockphoto.com/id/1597475039/photo/abstract-colorful-glass-background.jpg?s=612x612&w=0&k=20&c=Gv5iCYYzRnE7F_RwFDacJGmEgLfArYnkeyORu1umeZM="
+    ]
+}
+
 export const NewsLetterData = {
     settings: {
         textAlignment: "left",
@@ -347,7 +409,7 @@ export const footerData = {
     copyrightText: "2025 Patnagar Panipuri. All rights reserved."
 };
 
-export const visitOurStoreDatas = {
+export const VisitOurStoreDatas = {
     settings: {
         textAlignment: "center",
     },
@@ -359,52 +421,30 @@ export const visitOurStoreDatas = {
         description: 'Come experience the authentic taste in person',
     },
 
-    visitOurStoreData: [
-        {
-            icon: MdOutlineLocationOn,
-            title: "Address",
-            content: "Unit No. G/2, Lal Bhuvan Complex, Plot No. 493/2, near GH6 Pujya Mota Circle, Sector 22, Gandhinagar, Gujarat 382021"
-        },
-        {
-            icon: FiPhone,
-            title: "Phone",
-            content: "+91 9664864133"
-        },
-        {
-            icon: MdOutlineMail,
-            title: "E-mail",
-            content: "patnagarpanipuri@gmail.com"
-        },
-        {
-            icon: MdOutlineWatchLater,
-            title: "Open Hours",
-            content: "Everyday: 10:00 AM - 7:00 PM"
-        },
-    ]
+    visitOurStoreData: {
+        heading: "Contact Us",
+        description: "Reach out to us through any of these channels. We're always happy to help!",
+        contacts: [
+            {
+                icon: MdOutlineLocationOn,
+                title: "Address",
+                content: "Unit No. G/2, Lal Bhuvan Complex, Plot No. 493/2, near GH6 Pujya Mota Circle, Sector 22, Gandhinagar, Gujarat 382021"
+            },
+            {
+                icon: FiPhone,
+                title: "Phone",
+                content: "+91 9664864133"
+            },
+            {
+                icon: MdOutlineMail,
+                title: "E-mail",
+                content: "patnagarpanipuri@gmail.com"
+            },
+            {
+                icon: MdOutlineWatchLater,
+                title: "Open Hours",
+                content: "Everyday: 10:00 AM - 7:00 PM"
+            },
+        ]
+    }
 }
-export const menuItems = [
-    {
-        id: 1,
-        title: "Delicious Noodles",
-        desc: "Flour, Sugar, Butter, Milk, Eggs, Baking Powder",
-        image: itm1
-    },
-    {
-        id: 2,
-        title: "Healthy Pasta",
-        desc: "Baking Powder, Vanilla, Milk, Caster Sugar",
-        image: itm2,
-    },
-    {
-        id: 3,
-        title: "Spicy Noodles",
-        desc: "Berries, Sugar, Lemon Juice, Cornstarch",
-        image: itm3,
-    },
-    {
-        id: 4,
-        title: "Salmon Sushi",
-        desc: "Ramen always consists of soup and noodles",
-        image: itm4
-    },
-];
