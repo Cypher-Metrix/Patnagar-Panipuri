@@ -12,7 +12,7 @@ const Footer = () => {
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7 }}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                         >
                             <div className="title-wrap">
                                 <h4 className="heading mb-0 font-bold">{storeName}</h4>
@@ -35,7 +35,7 @@ const Footer = () => {
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                         >
                             <div className="title-wrap">
                                 <h4 className="heading mb-0 font-bold">{quickLinks?.heading}</h4>
@@ -53,7 +53,7 @@ const Footer = () => {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.9 }}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                         >
                             <div className="title-wrap">
                                 <h4 className="heading mb-0 font-bold">{contactsLinks.heading}</h4>
@@ -77,7 +77,7 @@ const Footer = () => {
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                     >
                         <p className="mb-0 font-medium">&copy; {copyrightText}</p>
                     </motion.div>

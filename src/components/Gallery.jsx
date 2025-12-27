@@ -22,7 +22,7 @@ const Gallery = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                     >
                         <IntroText settings={settings} intoTextContent={intoTextContent} />
                     </motion.div>
@@ -31,7 +31,7 @@ const Gallery = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                     >
                         <Masonry
                             breakpointCols={breakpointColumnsObj}

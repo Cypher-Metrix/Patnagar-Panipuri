@@ -51,7 +51,7 @@ export default function Testimonial() {
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                     >
                         <IntroText intoTextContent={intoTextContent} settings={settings} />
                     </motion.div>
@@ -60,7 +60,7 @@ export default function Testimonial() {
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                     >
                         <Slider ref={sliderRef} {...slickSettings}>
                             {testimonialsData.map((item) => (

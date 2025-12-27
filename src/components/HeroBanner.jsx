@@ -42,7 +42,7 @@ export default function HeroBanner() {
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7 }}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                         >
                             {shopData.openingHours &&
                                 <div className='p-2.5 px-4 inline-flex items-center justify-start gap-2.5 bg-gray-100/20 rounded-4xl mb-2.5 lg:mb-5'>
@@ -76,7 +76,7 @@ export default function HeroBanner() {
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7 }}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                         >
                             <div className='w-full flex lg:flex-row flex-col items-center gap-3 lg:gap-5'>
                                 <div className='w-full lg:w-1/2 flex lg:flex-col items-center gap-3 lg:gap-5'

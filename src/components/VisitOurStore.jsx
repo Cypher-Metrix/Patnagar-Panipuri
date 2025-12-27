@@ -13,7 +13,7 @@ export default function VisitOurStore() {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                 >
                     <IntroText intoTextContent={intoTextContent} settings={settings} />
                 </motion.div>
@@ -22,7 +22,7 @@ export default function VisitOurStore() {
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                     >
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.061439656849!2d72.65494587406414!3d23.24085120814964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b2667735d97%3A0xd72c00a234bda722!2sPatnagar%20Panipuri!5e0!3m2!1sen!2sin!4v1766768307748!5m2!1sen!2sin" allowFullScreen
                             loading="lazy"
@@ -35,7 +35,7 @@ export default function VisitOurStore() {
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.7 }}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                         >
                             <div className="w-full lg:w-1/2">
                                 <div className="w-full flex flex-col items-start justify-start gap-8 lg:py-10">

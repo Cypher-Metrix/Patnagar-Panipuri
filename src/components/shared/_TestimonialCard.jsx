@@ -33,7 +33,7 @@ export default function TestimonialCard({ testimonialContent }) {
                                     initial={{ rotate: 180 }}
                                     whileInView={{ rotate: 360 }}
                                     transition={{ duration: 1 }}
-                                    viewport={{ once: false }}
+                                    viewport={{ once: true }}
                                 >
                                     {isFilled ?
                                         (

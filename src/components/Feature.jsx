@@ -13,7 +13,7 @@ export default function Feature() {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                     >
                         <IntroText intoTextContent={intoTextContent} settings={settings} />
                     </motion.div>
@@ -24,7 +24,7 @@ export default function Feature() {
                                 initial={{ opacity: 0, y: 100 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.25 }}
-                                viewport={{ once: false }}
+                                viewport={{ once: true }}
                                 className="h-full"
                             >
                                 <FeatureCard {...item} />

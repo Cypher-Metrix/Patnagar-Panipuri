@@ -14,7 +14,7 @@ const Menus = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                     >
                         <IntroText intoTextContent={intoTextContent} settings={settings} />
                     </motion.div>
@@ -22,7 +22,7 @@ const Menus = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                     >
                         {menuItems.map((item) => (
                             <div
