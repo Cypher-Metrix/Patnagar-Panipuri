@@ -8,7 +8,7 @@ export default function Counter() {
     const hasIntroText =
         intoTextContent && Object.keys(intoTextContent).length > 0;
     return (
-        <section className="counter-section bg-gray-100" id="counter">
+        <section className="counter-section bg-gray-50" id="counter">
             <div className="inner-wrap">
                 <div className="container relative">
 

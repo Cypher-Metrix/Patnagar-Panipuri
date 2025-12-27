@@ -415,10 +415,10 @@ export const VisitOurStoreDatas = {
     },
 
     intoTextContent: {
-        headingTitle: 'Visit Our Store',
-        headingTitleSize: 'h2',
-        subheading: 'FEATURES',
-        description: 'Come experience the authentic taste in person',
+        // headingTitle: '',
+        // headingTitleSize: '',
+        // subheading: '',
+        // description: '',
     },
 
     visitOurStoreData: {

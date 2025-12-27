@@ -13,9 +13,9 @@ export default function App() {
     return (
         <>
             <HeroBanner />
-            <Testimonial />
             <Feature />
             <Menus />
+            <Testimonial />
             <Gallery />
             <Counter />
             <VisitOurStore />

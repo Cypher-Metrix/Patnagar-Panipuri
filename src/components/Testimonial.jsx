@@ -44,7 +44,7 @@ export default function Testimonial() {
     const isNextDisabled = currentSlide >= totalSlides - visibleSlides;
 
     return (
-        <section className="testimonial-section bg-gray-100 overflow-hidden" id="testimonial">
+        <section className="testimonial-section bg-gray-50 overflow-hidden" id="testimonial">
             <div className="inner-wrap">
                 <div className="container relative">
                     <motion.div

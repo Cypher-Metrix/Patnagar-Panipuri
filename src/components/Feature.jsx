@@ -6,7 +6,7 @@ import IntroText from './shared/_IntroText';
 export default function Feature() {
     const { intoTextContent, settings, featuresData } = FeatureSectionData;
     return (
-        <section className="features-section" id="features">
+        <section className="features-section bg-gray-50" id="features">
             <div className="inner-wrap">
                 <div className="container relative">
                     <motion.div

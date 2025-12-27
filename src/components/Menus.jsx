@@ -7,7 +7,7 @@ const Menus = () => {
 
     const { intoTextContent, settings, menuItems } = OurMenuData;
     return (
-        <section className="menu-section bg-gray-100" id="menu">
+        <section className="menu-section" id="menu">
             <div className="inner-wrap">
                 <div className="container">
                     <motion.div
