@@ -11,7 +11,7 @@ export default function VisitOurStore() {
         <section className="visit-our-store-section bg-white" id="visit-our-store">
             <div className="inner-wrap relative lg:py-0">
                 <div className="relative">
-                    <motion.div className="w-full lg:w-1/2 lg:h-full h-112.5 lg:absolute left-0 top-0"
+                    <motion.div className="w-full lg:w-1/2 lg:h-full h-112.5 lg:absolute z-10 left-0 top-0"
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7 }}
