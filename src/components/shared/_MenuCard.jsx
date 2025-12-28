@@ -16,7 +16,7 @@ export default function MenuCard({ menuCardContent }) {
                 <div className="menu-content p-4 flex flex-1 flex-col items-start justify-between gap-4">
                     <div className="flex flex-col items-stretch justify-start gap-2.5">
                         <h4 className="mb-0 text-2xl font-semibold heading line-clamp-2">{title}</h4>
-                        <p className={`mb-0 font-medium line-clamp-2 ${expanded ? "line-clamp-none" : "line-clamp-4"} cursor-pointer`}
+                        <p className={`mb-0 font-medium ${expanded ? "line-clamp-none" : "line-clamp-2"} cursor-pointer`}
                             onClick={() => setExpanded(!expanded)}
                         >{desc}</p>
                     </div>

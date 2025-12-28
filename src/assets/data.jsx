@@ -313,101 +313,101 @@ export const OurMenuData = {
         {
             id: 1,
             title: "Panipuri",
-            desc: "Flour, Sugar, Butter, Milk, Eggs, Baking Powder",
+            desc: "Crispy puris filled with spicy mashed potatoes, tangy water, and bold Indian flavours that burst in every bite.",
             image: Panipuri,
-            link: 'https://zomato.onelink.me/xqzv/hlaoj90j'
+            link: "https://zomato.onelink.me/xqzv/hlaoj90j"
         },
         {
             id: 2,
             title: "Dahipuri",
-            desc: "Baking Powder, Vanilla, Milk, Caster Sugar",
+            desc: "Golden puris topped with creamy yogurt, sweet chutney, and aromatic spices for a perfect balance of flavours.",
             image: Dahipuri,
-            link: ''
+            link: ""
         },
         {
             id: 3,
             title: "Sevpuri",
-            desc: "Berries, Sugar, Lemon Juice, Cornstarch",
+            desc: "A crunchy chaat layered with chutneys, fresh veggies, and fine sev for a spicy-sweet street food delight.",
             image: Sevpuri,
-            link: ''
+            link: ""
         },
         {
             id: 4,
             title: "Thepla",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "Soft, spiced Gujarati flatbread made with fresh herbs—perfectly wholesome and full of traditional taste.",
             image: Thepla,
-            link: 'https://zomato.onelink.me/xqzv/dbowjllf'
+            link: "https://zomato.onelink.me/xqzv/dbowjllf"
         },
         {
             id: 5,
             title: "Churmu",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "Crushed puris mixed with onions, chutneys, and spices for a bold, crunchy chaat experience.",
             image: Churmu,
-            link: 'https://zomato.onelink.me/xqzv/5l6bgi6w'
+            link: "https://zomato.onelink.me/xqzv/5l6bgi6w"
         },
         {
             id: 6,
             title: "Sukha Bhel",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "A dry, crunchy mix of puffed rice, sev, peanuts, and spices—light, tasty, and addictive.",
             image: SukhaBhel,
-            link: 'https://zomato.onelink.me/xqzv/ayee016t'
+            link: "https://zomato.onelink.me/xqzv/ayee016t"
         },
         {
             id: 7,
             title: "Chanabhel",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "Protein-rich boiled chana tossed with onions, spices, and chutneys for a healthy yet flavorful chaat.",
             image: Chanabhel,
-            link: ''
+            link: ""
         },
         {
             id: 8,
             title: "Wafer Chutney",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "Crispy potato wafers mixed with tangy chutneys and masala for a crunchy street-style snack.",
             image: WaferChutney,
-            link: 'https://zomato.onelink.me/xqzv/k6vl4jig'
+            link: "https://zomato.onelink.me/xqzv/k6vl4jig"
         },
         {
             id: 9,
             title: "Dahimamri",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "Crunchy mamra combined with chilled yogurt and spices for a refreshing and light chaat option.",
             image: Dahimamari,
-            link: ''
+            link: ""
         },
         {
             id: 10,
             title: "Basket Chat",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "An edible crispy basket filled with layered chutneys, veggies, and chaat toppings—rich and indulgent.",
             image: BasketChat,
-            link: ''
+            link: ""
         },
         {
             id: 11,
             title: "Sukha Puri",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "Dry puris tossed with spicy chutneys and crunchy toppings for a quick, flavour-packed snack.",
             image: KoriPuri,
-            link: 'https://zomato.onelink.me/xqzv/oxrp3lam'
+            link: "https://zomato.onelink.me/xqzv/oxrp3lam"
         },
         {
             id: 12,
             title: "Chana Bataka Dough",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "A hearty mix of boiled chana and potatoes blended with traditional spices for a comforting chaat treat.",
             image: ChanaBatakaDough,
-            link: 'https://zomato.onelink.me/xqzv/iwd2hjzl'
+            link: "https://zomato.onelink.me/xqzv/iwd2hjzl"
         },
         {
             id: 13,
             title: "Fudina Pani",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "Refreshing mint-based water with a spicy kick, perfect for elevating every pani puri bite.",
             image: FudinaBottle,
-            link: 'https://zomato.onelink.me/xqzv/q9ghsgzb'
+            link: "https://zomato.onelink.me/xqzv/q9ghsgzb"
         },
         {
             id: 14,
             title: "Khajur Imli Pani",
-            desc: "Ramen always consists of soup and noodles",
+            desc: "Sweet and tangy tamarind-date water that adds a rich, mouth-watering flavour to chaat.",
             image: KhajurImliBottle,
-            link: 'https://zomato.onelink.me/xqzv/n6rpxszl'
-        },
+            link: "https://zomato.onelink.me/xqzv/n6rpxszl"
+        }
     ]
 }
 
