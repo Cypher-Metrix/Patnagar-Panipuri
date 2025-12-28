@@ -1,34 +1,16 @@
-.menu-container {
-    width: 100%;
-    padding-top: 4em;
-    padding-bottom: 2em;
+.menu-section{
+    .description-wrap{
+        p{
+            @apply w-9/12 mx-auto;
+        }
+    }
 }
-
-.menu-header {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.menu-header h2 {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.menu-header p {
-    font-size: 1rem;
-    color: #555;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 .menu-wrapper {
-    width: 80vw;
-    margin: auto;
+    width: 100%;
     display: flex;
     background: #0b0b0b;
     border-radius: 40px;
-    padding: 40px;
-    padding-bottom: 0;
+    padding: 0px;
     gap: 24px;
     align-items: stretch;
     overflow: visible;
@@ -40,12 +22,8 @@
     flex-direction: column;
     border-radius: 28px;
     padding: 32px 24px;
-
     color: #ffffff;
     cursor: pointer;
-
-    height: 300px;
-
     transition:
         flex 0.45s ease,
         height 0.45s ease,
@@ -58,18 +36,15 @@
 }
 
 .menu-card:hover {
-    flex: .75;
+    flex: 0.8;
     align-items: center;
-    height: 380px;
-
-    margin-top: -80px;
-
+    margin-top: -40px;
     background: #F76631;
     z-index: 10;
 }
 
-.menu-container:hover .menu-card:not(:hover) {
-    flex: 0.85;
+.menu-section:hover .menu-card:not(:hover) {
+    flex: 0.6;
 }
 
 .menu-card img {

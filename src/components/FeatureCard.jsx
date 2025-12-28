@@ -8,7 +8,7 @@ export default function FeatureCard({
     return (
         <div
             className={`group p-8 bg-white rounded-2xl border-2 ${borderColor} hover:border-orange-400 
-        transition-all duration-300 hover:shadow-xl hover:-translate-y-2`}
+        transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full`}
         >
             <div
                 className={`inline-flex items-center justify-center w-16 h-16 ${bgColor} rounded-2xl mb-6 

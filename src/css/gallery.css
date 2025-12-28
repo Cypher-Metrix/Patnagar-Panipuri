@@ -1,33 +1,14 @@
-.gallery-container {
-    width: 100%;
-    padding: 1em;
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gallery-header {
-    text-align: center;
-    margin: 2em 0 4em;
-}
-
-.gallery-header h2 {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.gallery-header p {
-    font-size: 1em;
-    color: #555;
-    max-width: 600px;
-    margin: 0 auto;
+.gallery-section{
+    .description-wrap{
+        p{
+            @apply w-9/12 mx-auto;
+        }
+    }
 }
 
 .masonry-grid {
     display: flex;
     margin-left: -1em;
-    width: 60vw;
 }
 
 .masonry-grid_column {

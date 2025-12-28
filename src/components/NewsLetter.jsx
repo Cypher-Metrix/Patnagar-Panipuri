@@ -3,6 +3,7 @@ import { NewsLetterData } from '../assets/data'
 import IntroText from './shared/_IntroText'
 import { FiLoader } from 'react-icons/fi'
 import toast from 'react-hot-toast'
+import { motion } from "framer-motion";
 
 export default function NewsLetter() {
     const { settings, intoTextContent, backgroundImage } = NewsLetterData
@@ -59,7 +60,7 @@ export default function NewsLetter() {
                 toast.error('Failed to subscribe. Please try again.')
             }
         } catch (err) {
-            toast.error('Network error. Please try again.')
+            toast.error('Network error. Please try again.', err.message);
         } finally {
             setLoading(false)
         }
@@ -75,12 +76,16 @@ export default function NewsLetter() {
         >
             <div className='inset absolute left-0 top-0 bottom-0 right-0 bg-black/50' />
             <div className="inner-wrap">
-                <div className="container relative">
+                <motion.div className="container relative"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                    viewport={{ once: true }}
+                >
                     <IntroText
                         settings={settings}
                         intoTextContent={intoTextContent}
                     />
-
                     <div className="w-full mt-8 lg:mt-12">
                         <div className="w-full lg:w-7/12">
                             <form
@@ -128,7 +133,7 @@ export default function NewsLetter() {
                             </form>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     )

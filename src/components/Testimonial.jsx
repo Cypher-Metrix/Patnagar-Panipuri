@@ -4,6 +4,7 @@ import TestimonialCard from "./shared/_TestimonialCard";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import { TestimonialData } from "../assets/data";
 import IntroText from "./shared/_IntroText";
+import { motion } from "framer-motion";
 
 export default function Testimonial() {
 
@@ -43,21 +44,35 @@ export default function Testimonial() {
     const isNextDisabled = currentSlide >= totalSlides - visibleSlides;
 
     return (
-        <section className="testimonial-section bg-gray-100" id="testimonial">
+        <section className="testimonial-section bg-gray-50 overflow-hidden" id="testimonial">
             <div className="inner-wrap">
                 <div className="container relative">
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.7 }}
+                        viewport={{ once: true }}
+                    >
+                        <IntroText intoTextContent={intoTextContent} settings={settings} />
+                    </motion.div>
 
-                    <IntroText intoTextContent={intoTextContent} settings={settings} />
-
-                    <div className="w-full mt-5">
+                    <motion.div className="w-full mt-5"
+                        initial={{ opacity: 0, x: 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.7 }}
+                        viewport={{ once: true }}
+                    >
                         <Slider ref={sliderRef} {...slickSettings}>
-                            {testimonialsData.map((item, idx) => (
-                                <TestimonialCard key={item.id} testimonialContent={item} />
+                            {testimonialsData.map((item) => (
+                                <div className="w-full h-full" key={item.id}>
+                                    <TestimonialCard testimonialContent={item} />
+                                </div>
                             ))}
                         </Slider>
-                    </div>
+                    </motion.div>
 
-                    <div className="w-full flex gap-4 justify-center lg:justify-end">
+                    <div className="w-full flex gap-4 justify-center lg:justify-end"
+                    >
 
                         {/* Prev Button */}
                         <button
