@@ -15,7 +15,7 @@ const Gallery = () => {
     const { images, intoTextContent, settings } = GalleryData;
 
     return (
-        <div className="gallery-section">
+        <div className="gallery-section" id="gallery">
             <div className="inner-wrap">
                 <div className="container">
                     <motion.div

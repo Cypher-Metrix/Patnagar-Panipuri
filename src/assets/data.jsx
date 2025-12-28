@@ -13,14 +13,19 @@ import {
     FaMapMarkerAlt,
     FaPhoneAlt,
     FaEnvelope,
+    FaQuoteLeft,
 } from "react-icons/fa";
 import { SiZomato, SiFacebook, SiInstagram } from "react-icons/si";
 import { FiPhone } from "react-icons/fi";
 
-import itm1 from "./itm1.png"
-import itm2 from "./itm2.png"
-import itm3 from "./itm3.png"
-import itm4 from "./itm4.png"
+import exterior_1 from "./ExteriorBanner-1.jpg"
+import exterior_2 from "./ExteriorBanner-2.jpg"
+import exterior_3 from "./ExteriorBanner-3.jpg"
+import interior_1 from "./interior-1.png"
+import interior_2 from "./interior-2.jpg"
+import interior_3 from "./interior-3.jpg"
+import OutdoorForGallery from "./OutdoorForGallery.jpg"
+import OutdoorForGallery_2 from "./OutdoorForGallery2.jpg"
 
 
 export const HomePageTextContent = {
@@ -65,12 +70,12 @@ export const HeroBannerData = {
         {
             id: 1,
             label: 'Explore More',
-            link: '#contact-us'
+            link: '#testimonial'
         },
         {
             id: 2,
             label: 'Contact Us',
-            link: '#contact-us'
+            link: '#visit-our-store'
         }
     ],
     shopData: {
@@ -83,17 +88,17 @@ export const HeroBannerData = {
     banners: [
         {
             id: 1,
-            title: 'Sample 1',
+            title: 'Patnagar Panipuri',
             url: herobanner1
         },
         {
             id: 2,
-            title: 'Sample 2',
+            title: 'Inside From Shop',
             url: herobanner2
         },
         {
             id: 3,
-            title: 'Sample 3',
+            title: 'Panipuri',
             url: herobanner3
         },
     ]
@@ -105,48 +110,73 @@ export const TestimonialData = {
     },
 
     intoTextContent: {
-        headingTitle: 'Why people choose us ?',
+        headingTitle: 'Our Happy Customers',
         headingTitleSize: 'h2',
-        subheading: 'FEATURES',
-        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+        subheading: '',
+        description: 'Google reviews by our beloved customers',
     },
 
     testimonialsData: [
         {
-            review: "Lorem ipsum dolor sit amet consectetur...",
-            author: "Karan Kumbhare",
-            rating: 4.5,
-            image: "https://images.unsplash.com/photo-1653771926533-380817d3e7b3?w=500"
-        },
-        {
-            review: "Suspendisse aliquet tellus adipiscing...",
-            author: "Aman Singh",
+            review: `Hygiene, taste, quality and overall great experience!!
+इनकी पकौड़िया इंसान के हाथों से टच ना होने के कारण काफ़ी ज़्यादा hygienic है
+Cleanliness और स्वाद बढ़िया है
+यह सेव पूरी, दही पूरी तो ठीक flavored सोडा भी मिलते है
+Must visit with family 😋🤩😇`,
+            author: "Darshak Mehta",
             rating: 5,
-            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=500"
+            image: "https://lh3.googleusercontent.com/a-/ALV-UjWSFLazGN_h9vL5uqY8u8gsayTbKQu43nbPYV0TlQXuu46n6VpZcQ=w1024-h1024-p-rp-mo-ba4-br100"
         },
         {
-            review: "Dignissim nunc facilisi pretium id...",
-            author: "Riya Das",
-            rating: 4,
-            image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500"
+            review: "Really great taste. Would hundred percent recommend.",
+            author: "Hardik Thakkar",
+            rating: 5,
+            image: ""
         },
         {
-            review: "Dignissim nunc facilisi pretium id...",
-            author: "Riya Das",
-            rating: 4,
-            image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500"
+            review: "Very testy. hygiene perfectly.Good service and a.c ambiounce.pure R.o Drinking water available.made with R.o water.",
+            author: "Dipali Nanavaty",
+            rating: 5,
+            image: "https://lh3.googleusercontent.com/a-/ALV-UjVrPXjUT7O9EyBxK93KIbTaH6mdAH4eESqXVWnTA_LlsrYGOaVS4w=w1024-h1024-p-rp-mo-br100"
         },
         {
-            review: "Dignissim nunc facilisi pretium id...",
-            author: "Riya Das",
-            rating: 4,
-            image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500"
+            review: "It was good to have different taste of Pani puri, Service was very good. Dahi puri was also worth eating.. 👌🏻🤩",
+            author: "Karan Kumbhare",
+            rating: 5,
+            image: "https://lh3.googleusercontent.com/a-/ALV-UjXO7hWzfhHfvZ5FYdTGUDulNSn77sL85BYX4x7rYur8vvnQCohr=w1024-h1024-p-rp-mo-br100"
         },
         {
-            review: "Dignissim nunc facilisi pretium id...Dignissim nunc facilisi pretium id...Dignissim nunc facilisi pretium id...Dignissim nunc facilisi pretium id...",
-            author: "Riya Das",
-            rating: 4,
-            image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500"
+            review: `Nice quality of panipuri
+Uncle's nature is so familiar 🤗`,
+            author: "Yagnik",
+            rating: 5,
+            image: ""
+        },
+        {
+            review: `Best Pani Puri In Gandhinagar.
+Taste me hit budget me fit.`,
+            author: "Sujal Balar",
+            rating: 5,
+            image: "https://lh3.googleusercontent.com/a-/ALV-UjWc9_qkcx-FsO8FBUwIsn9pU9dO1-BypnuQHmGfrT-UPT7xO6rm=w1024-h1024-p-rp-mo-br100"
+        },
+        {
+            review: `Panipuri and Dahipuri was amazing tast. We loved it 👌👍👌`,
+            author: "Minaxi Odedra",
+            rating: 5,
+            image: "https://lh3.googleusercontent.com/a-/ALV-UjX8jzTc6m01CnbB7nCpMMtzbAHNlE4zXkGrQamYqgANeHI0Nqy4HA=w1024-h1024-p-rp-mo-br100"
+        },
+        {
+            review: `Hygienic place to eat  Very Tasty Panipuri😋😋😋😋😋`,
+            author: "Sonal Soni",
+            rating: 5,
+            image: ""
+        },
+        {
+            review: `Kaka Ni Panipuri Jordar chhe......if it happens, life happens. Otherwise, nothing happens in Kaka's Panipuri...
+Wow Kaka....Wow`,
+            author: "Rakesh Makwana",
+            rating: 5,
+            image: "https://lh3.googleusercontent.com/a-/ALV-UjUUDj6c0OLJzDGmkEpizIC43_ok7-3Xd90HeHI_iti-NkwCXmsvfA=w1024-h1024-p-rp-mo-ba3-br100"
         },
     ]
 }
@@ -157,10 +187,10 @@ export const FeatureSectionData = {
     },
 
     intoTextContent: {
-        headingTitle: 'Why people choose us ?',
+        headingTitle: 'What Makes Our Pani Puri Special',
         headingTitleSize: 'h2',
-        subheading: 'FEATURES',
-        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+        subheading: '',
+        description: 'From authentic flavors and premium ingredients to daily freshness and top-level hygiene, we take pride in serving pani puri that’s made with love and enjoyed with complete peace of mind.',
     },
     featuresData: [
         {
@@ -227,25 +257,25 @@ export const CounterSectionData = {
     },
     counterData: [
         {
-            title: "10+",
+            title: "2+",
             description: "Years Experience",
             icon: BsClockHistory,
             color: 'text-orange-500'
         },
         {
-            title: "10K+",
+            title: "5K+",
             description: "Happy Customers",
             icon: PiUsersThree,
             color: 'text-orange-500'
         },
         {
-            title: "20+",
-            description: "Menu Items",
-            icon: MdMenuBook,
+            title: "200+",
+            description: "Zomato Reviews",
+            icon: FaQuoteLeft,
             color: 'text-orange-500'
         },
         {
-            title: "4.9",
+            title: "4.8",
             description: "Average Rating",
             icon: FaRegStar,
             color: 'text-orange-500'
@@ -253,65 +283,147 @@ export const CounterSectionData = {
     ]
 }
 
+import Panipuri from "./Panipuri.avif"
+import Dahipuri from "./dahipuri.jpg"
+import Sevpuri from "./sevpuri.jpg"
+import BasketChat from "./BasketChat.jpg"
+import Dahimamari from "./Dahimamari.jpg"
+import Thepla from "./Thepla.avif"
+import Churmu from "./Churmu.jpg"
+import Chanabhel from "./Chanabhel.jpg"
+import SukhaBhel from "./SukhaBhel.avif"
+import WaferChutney from "./WaferChutney.avif"
+import ChanaBatakaDough from "./ChanaBatakaDough.avif"
+import FudinaBottle from "./FudinaBottle.avif"
+import KhajurImliBottle from "./KhajurImliBottle.avif"
+import KoriPuri from "./KoriPuri.avif"
+
 export const OurMenuData = {
     settings: {
         textAlignment: "center",
     },
 
     intoTextContent: {
-        headingTitle: 'Our Delicious Menu',
+        headingTitle: 'Fresh, Flavorful & Made Daily',
         headingTitleSize: 'h2',
         subheading: '',
-        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+        description: 'From crispy pani puri to flavorful chaat, our menu is crafted fresh daily to give you an authentic and unforgettable street food experience',
     },
     menuItems: [
         {
             id: 1,
-            title: "Delicious Noodles",
+            title: "Panipuri",
             desc: "Flour, Sugar, Butter, Milk, Eggs, Baking Powder",
-            image: itm1
+            image: Panipuri,
+            link: 'https://zomato.onelink.me/xqzv/hlaoj90j'
         },
         {
             id: 2,
-            title: "Healthy Pasta",
+            title: "Dahipuri",
             desc: "Baking Powder, Vanilla, Milk, Caster Sugar",
-            image: itm2,
+            image: Dahipuri,
+            link: ''
         },
         {
             id: 3,
-            title: "Spicy Noodles",
+            title: "Sevpuri",
             desc: "Berries, Sugar, Lemon Juice, Cornstarch",
-            image: itm3,
+            image: Sevpuri,
+            link: ''
         },
         {
             id: 4,
-            title: "Salmon Sushi",
+            title: "Thepla",
             desc: "Ramen always consists of soup and noodles",
-            image: itm4
+            image: Thepla,
+            link: 'https://zomato.onelink.me/xqzv/dbowjllf'
+        },
+        {
+            id: 5,
+            title: "Churmu",
+            desc: "Ramen always consists of soup and noodles",
+            image: Churmu,
+            link: 'https://zomato.onelink.me/xqzv/5l6bgi6w'
+        },
+        {
+            id: 6,
+            title: "Sukha Bhel",
+            desc: "Ramen always consists of soup and noodles",
+            image: SukhaBhel,
+            link: 'https://zomato.onelink.me/xqzv/ayee016t'
+        },
+        {
+            id: 7,
+            title: "Chanabhel",
+            desc: "Ramen always consists of soup and noodles",
+            image: Chanabhel,
+            link: ''
+        },
+        {
+            id: 8,
+            title: "Wafer Chutney",
+            desc: "Ramen always consists of soup and noodles",
+            image: WaferChutney,
+            link: 'https://zomato.onelink.me/xqzv/k6vl4jig'
+        },
+        {
+            id: 9,
+            title: "Dahimamri",
+            desc: "Ramen always consists of soup and noodles",
+            image: Dahimamari,
+            link: ''
+        },
+        {
+            id: 10,
+            title: "Basket Chat",
+            desc: "Ramen always consists of soup and noodles",
+            image: BasketChat,
+            link: ''
+        },
+        {
+            id: 11,
+            title: "Sukha Puri",
+            desc: "Ramen always consists of soup and noodles",
+            image: KoriPuri,
+            link: 'https://zomato.onelink.me/xqzv/oxrp3lam'
+        },
+        {
+            id: 12,
+            title: "Chana Bataka Dough",
+            desc: "Ramen always consists of soup and noodles",
+            image: ChanaBatakaDough,
+            link: 'https://zomato.onelink.me/xqzv/iwd2hjzl'
+        },
+        {
+            id: 13,
+            title: "Fudina Pani",
+            desc: "Ramen always consists of soup and noodles",
+            image: FudinaBottle,
+            link: 'https://zomato.onelink.me/xqzv/q9ghsgzb'
+        },
+        {
+            id: 14,
+            title: "Khajur Imli Pani",
+            desc: "Ramen always consists of soup and noodles",
+            image: KhajurImliBottle,
+            link: 'https://zomato.onelink.me/xqzv/n6rpxszl'
         },
     ]
 }
+
 export const GalleryData = {
     settings: {
         textAlignment: "center",
     },
 
     intoTextContent: {
-        headingTitle: 'Our Gallery',
+        headingTitle: 'Captured Moments of Deliciousness',
         headingTitleSize: 'h2',
         subheading: '',
-        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+        description: 'Explore snapshots of our fresh ingredients, flavorful pani puri, and the smiles we serve every day.',
     },
     images: [
-        "https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp",
-        "https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80",
-        "https://tinypng.com/images/social/website.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzY4ZhdaTaeaDiMrEl_YRU8_8txhzBh2hQcA&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA-7UIYLcEK1mAwct1XgW8aSMnvm3ZEQBYgQ&s",
-        "https://burst.shopifycdn.com/photos/beach-sunset-thailand.jpg?width=1000&format=pjpg&exif=0&iptc=0",
-        "https://img.freepik.com/free-photo/beautiful-lake-mountains_395237-44.jpg?semt=ais_hybrid&w=740&q=80",
-        "https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "https://media.istockphoto.com/id/1597475039/photo/abstract-colorful-glass-background.jpg?s=612x612&w=0&k=20&c=Gv5iCYYzRnE7F_RwFDacJGmEgLfArYnkeyORu1umeZM="
+        exterior_1, exterior_2, exterior_3, interior_1, interior_2, interior_3, OutdoorForGallery, OutdoorForGallery_2
     ]
 }
 
@@ -330,8 +442,8 @@ export const NewsLetterData = {
 }
 
 export const footerData = {
-    storeName: "Panipuri Store",
-    storeDescription: "Serving authentic and delicious panipuri since 2023.",
+    storeName: "Patnagar Panipuri",
+    storeDescription: "The Taste of Patnagar",
     socialLinks: [
         {
             id: 0,
@@ -428,17 +540,20 @@ export const VisitOurStoreDatas = {
             {
                 icon: MdOutlineLocationOn,
                 title: "Address",
-                content: "Unit No. G/2, Lal Bhuvan Complex, Plot No. 493/2, near GH6 Pujya Mota Circle, Sector 22, Gandhinagar, Gujarat 382021"
+                content: "Unit No. G/2, Lal Bhuvan Complex, Plot No. 493/2, near GH6 Pujya Mota Circle, Sector 22, Gandhinagar, Gujarat 382021",
+                link: "https://maps.app.goo.gl/zrSjtKW3hwEpUTDy9?g_st=aw"
             },
             {
                 icon: FiPhone,
                 title: "Phone",
-                content: "+91 9664864133"
+                content: "+91 9664864133",
+                link: "tel:+91 96648 64133"
             },
             {
                 icon: MdOutlineMail,
                 title: "E-mail",
-                content: "patnagarpanipuri@gmail.com"
+                content: "patnagarpanipuri@gmail.com",
+                link: "mailto:patnagarpanipuri@gmail.com"
             },
             {
                 icon: MdOutlineWatchLater,

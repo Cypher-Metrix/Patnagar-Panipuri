@@ -45,7 +45,7 @@ export default function HeroBanner() {
                             viewport={{ once: true }}
                         >
                             {shopData.openingHours &&
-                                <div className='p-2.5 px-4 inline-flex items-center justify-start gap-2.5 bg-gray-100/20 rounded-4xl mb-2.5 lg:mb-5'>
+                                <div className='p-2.5 px-4 inline-flex items-center justify-start gap-2.5 bg-gray-100/90 rounded-4xl mb-2.5 lg:mb-5'>
                                     <div className={`h-2 w-2 rounded-full ${open ? "bg-green-600" : 'bg-red-600'}`} />
                                     <p className='mb-0 text-sm'>{open ? "Open Now" : 'Closed'}</p>
                                 </div>}
