@@ -1,0 +1,19 @@
+.menu-section{
+    .slick-track{
+        @apply flex items-stretch justify-start pt-16 pb-8;
+        &::before{
+            display: none;
+        }
+        
+        .slick-slide > div:first-child {
+            @apply h-full;
+        }
+        .slick-slide{
+            @apply h-[inherit] mr-5;
+
+            &:last-child{
+                @apply mr-0;
+            }
+        }
+    }  
+}

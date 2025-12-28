@@ -1,0 +1,20 @@
+.hero-banner-section{
+    @apply relative overflow-hidden bg-linear-to-br from-gray-200 via-slate-200 to-gray-200 pb-12 lg:pb-20;
+
+    .hero-banner-image {
+        @apply w-full relative flex flex-1 rounded-xl overflow-hidden transition-transform duration-500 shadow-xl;
+        
+        &:hover {
+            @apply scale-105;
+
+            .hero-banner-image-overlay{
+                @apply absolute left-0 top-0 h-full w-full bg-linear-to-t from-black/85 via-transparent to-black/50;
+            }
+            
+            .hero-banner-image-title{
+                @apply absolute left-5 bottom-5 mb-0 text-white flex z-10;
+                
+            }
+        }
+    }
+}
