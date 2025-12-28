@@ -88,17 +88,17 @@ export const HeroBannerData = {
     banners: [
         {
             id: 1,
-            title: 'Sample 1',
+            title: 'Patnagar Panipuri',
             url: herobanner1
         },
         {
             id: 2,
-            title: 'Sample 2',
+            title: 'Inside From Shop',
             url: herobanner2
         },
         {
             id: 3,
-            title: 'Sample 3',
+            title: 'Panipuri',
             url: herobanner3
         },
     ]
