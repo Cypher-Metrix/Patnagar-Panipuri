@@ -1,8 +1,8 @@
 import { FaAward, FaFireFlameCurved, FaRegClock } from 'react-icons/fa6'
 import herobanner1 from './herobanner-1.jpeg'
 import herobanner2 from './herobanner-2.jpeg'
-import herobanner3 from './herobanner-3.jpeg'
-import newsletterBG from './newsletter-bg.png'
+import herobanner3 from './Panipuri-1.jpg'
+import newsletterBG from './newsletter-bg.jpg'
 import { PiUsersThree } from 'react-icons/pi'
 import { CiHeart } from 'react-icons/ci'
 import { HiSparkles } from 'react-icons/hi'
@@ -17,15 +17,30 @@ import {
 } from "react-icons/fa";
 import { SiZomato, SiFacebook, SiInstagram } from "react-icons/si";
 import { FiPhone } from "react-icons/fi";
-
+import Panipuri from "./Panipuri.avif"
+import Dahipuri from "./dahipuri.jpg"
+import Sevpuri from "./sevpuri.jpg"
+import BasketChat from "./BasketChat.jpg"
+import Dahimamari from "./Dahimamari.jpg"
+import Thepla from "./Thepla.avif"
+import Churmu from "./Churmu.jpg"
+import Chanabhel from "./Chanabhel.jpg"
+import SukhaBhel from "./SukhaBhel.avif"
+import WaferChutney from "./WaferChutney.avif"
+import ChanaBatakaDough from "./ChanaBatakaDough.avif"
+import FudinaBottle from "./FudinaBottle.avif"
+import KhajurImliBottle from "./KhajurImliBottle.avif"
+import KoriPuri from "./KoriPuri.avif"
 import exterior_1 from "./ExteriorBanner-1.jpg"
 import exterior_2 from "./ExteriorBanner-2.jpg"
 import exterior_3 from "./ExteriorBanner-3.jpg"
 import interior_1 from "./interior-1.png"
 import interior_2 from "./interior-2.jpg"
+import interior_2_png from "./interior-2.png"
 import interior_3 from "./interior-3.jpg"
 import OutdoorForGallery from "./OutdoorForGallery.jpg"
 import OutdoorForGallery_2 from "./OutdoorForGallery2.jpg"
+import TwoPillers from "./WM_NO_BG.png"
 
 
 export const HomePageTextContent = {
@@ -64,7 +79,7 @@ export const HeroBannerData = {
         headingTitleSize: 'h1',
         subheading: '',
         description: 'Experience the authentic taste of crispy puris filled with tangy, spicy water and delicious fillings. Made fresh daily with love!',
-        richTextContent: '<p>Experience the authentic taste of crispy puris filled with tangy, spicy water and delicious fillings. Made fresh daily with love!</p>'
+        richTextContent: '<p>The Best Panipuri in Gandhinagar</p>'
     },
     introLinks: [
         {
@@ -83,7 +98,8 @@ export const HeroBannerData = {
             openTime: '10:00 AM',
             closeTime: '08:00 PM',
         },
-        location: 'Gandhinagar, Gujarat'
+        location: 'Gandhinagar, Gujarat',
+        left_bg: TwoPillers
     },
     banners: [
         {
@@ -283,21 +299,6 @@ export const CounterSectionData = {
     ]
 }
 
-import Panipuri from "./Panipuri.avif"
-import Dahipuri from "./dahipuri.jpg"
-import Sevpuri from "./sevpuri.jpg"
-import BasketChat from "./BasketChat.jpg"
-import Dahimamari from "./Dahimamari.jpg"
-import Thepla from "./Thepla.avif"
-import Churmu from "./Churmu.jpg"
-import Chanabhel from "./Chanabhel.jpg"
-import SukhaBhel from "./SukhaBhel.avif"
-import WaferChutney from "./WaferChutney.avif"
-import ChanaBatakaDough from "./ChanaBatakaDough.avif"
-import FudinaBottle from "./FudinaBottle.avif"
-import KhajurImliBottle from "./KhajurImliBottle.avif"
-import KoriPuri from "./KoriPuri.avif"
-
 export const OurMenuData = {
     settings: {
         textAlignment: "center",
@@ -423,7 +424,7 @@ export const GalleryData = {
         description: 'Explore snapshots of our fresh ingredients, flavorful pani puri, and the smiles we serve every day.',
     },
     images: [
-        exterior_1, exterior_2, exterior_3, interior_1, interior_2, interior_3, OutdoorForGallery, OutdoorForGallery_2
+        exterior_1, interior_1, interior_2, OutdoorForGallery, exterior_2, exterior_3, interior_3, interior_2_png, OutdoorForGallery_2
     ]
 }
 
@@ -436,7 +437,7 @@ export const NewsLetterData = {
         headingTitle: 'NEWSLETTER',
         headingTitleSize: 'h2',
         subheading: 'Subscribe',
-        description: 'Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.',
+        description: 'Subscribe to our newsletter to get some spicy & delicious updates on your email !',
     },
     backgroundImage: newsletterBG
 }
@@ -456,14 +457,14 @@ export const footerData = {
             id: 1,
             name: "Instagram",
             icon: SiInstagram,
-            link: "https://zomato.onelink.me/xqzv/4euxppzx",
+            link: "https://www.instagram.com/patnagarpanipuri?igsh=cDQ0azV0eHJ2ZnI2",
             colorClass: 'text-var[--color-6] hover:text-red-600'
         },
         {
             id: 2,
             name: "Facebook",
             icon: SiFacebook,
-            link: "https://zomato.onelink.me/xqzv/4euxppzx",
+            link: "https://www.facebook.com/share/17gknnAFFo/",
             colorClass: 'text-var[--color-6] hover:text-blue-700'
         }
     ],
@@ -487,7 +488,7 @@ export const footerData = {
             },
             {
                 id: 3,
-                label: 'Menus',
+                label: 'Menu',
                 link: '#menu'
             },
         ]
@@ -558,7 +559,7 @@ export const VisitOurStoreDatas = {
             {
                 icon: MdOutlineWatchLater,
                 title: "Open Hours",
-                content: "Everyday: 10:00 AM - 7:00 PM"
+                content: "Everyday: 10:00 AM - 8:00 PM"
             },
         ]
     }
