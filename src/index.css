@@ -60,11 +60,11 @@
     .title-wrap {
         @apply flex flex-col justify-center items-center;
         .heading {
-            @apply bg-gradient-to-r from-[var(--color-2)] to-[var(--color-3)] bg-clip-text text-transparent;
+            @apply bg-gradient-to-b from-[var(--color-3)] to-[var(--color-2)] bg-clip-text text-transparent;
         }
 
         .subheading {
-            @apply bg-gradient-to-r from-[var(--color-3)] to-[var(--color-4)] bg-clip-text text-transparent text-sm font-semibold;
+            @apply bg-gradient-to-b from-[var(--color-3)] to-[var(--color-4)] bg-clip-text text-transparent text-sm font-semibold;
         }
     }
 

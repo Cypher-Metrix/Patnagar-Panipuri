@@ -60,9 +60,16 @@ export default function VisitOurStore() {
                                                         <h3 className="text-gray-900 text-xl lg:text-2xl font-medium leading-none mb-1">
                                                             {item.title}
                                                         </h3>
-                                                        <p className="text-gray-700 text-sm lg:text-base mb-0">
-                                                            {item.content}
-                                                        </p>
+                                                        {item?.link
+                                                            ?
+                                                            <a href={item.link} target="_blank" className="text-gray-700 text-sm lg:text-base mb-0">
+                                                                {item.content}
+                                                            </a>
+                                                            :
+                                                            <p className="text-gray-700 text-sm lg:text-base mb-0">
+                                                                {item.content}
+                                                            </p>
+                                                        }
                                                     </div>
                                                 </div>
                                             ))}
@@ -73,7 +80,7 @@ export default function VisitOurStore() {
                         </motion.div>
                     </div>
                 </div>
-            </div>
+            </div >
         </section >
     );
 }

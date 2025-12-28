@@ -1,5 +1,5 @@
 .footer-section {
-    @apply relative overflow-hidden bg-linear-to-br from-gray-400 via-slate-300 to-gray-300;
+    @apply relative overflow-hidden bg-linear-to-br from-gray-200 via-slate-200 to-gray-200;
 }
 
 .footer-text {

@@ -1,92 +1,19 @@
 .menu-section{
-    .description-wrap{
-        p{
-            @apply w-9/12 mx-auto;
+    .slick-track{
+        @apply flex items-stretch justify-start pt-16 pb-8;
+        &::before{
+            display: none;
         }
-    }
-}
-.menu-wrapper {
-    width: 100%;
-    display: flex;
-    background: #0b0b0b;
-    border-radius: 40px;
-    padding: 0px;
-    gap: 24px;
-    align-items: stretch;
-    overflow: visible;
-}
+        
+        .slick-slide > div:first-child {
+            @apply h-full;
+        }
+        .slick-slide{
+            @apply h-[inherit] mr-5;
 
-.menu-card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    border-radius: 28px;
-    padding: 32px 24px;
-    color: #ffffff;
-    cursor: pointer;
-    transition:
-        flex 0.45s ease,
-        height 0.45s ease,
-        margin 0.45s ease,
-        background 0.3s ease,
-        box-shadow 0.3s ease;
-    align-items: .3s ease;
-
-    position: relative;
-}
-
-.menu-card:hover {
-    flex: 0.8;
-    align-items: center;
-    margin-top: -40px;
-    background: #F76631;
-    z-index: 10;
-}
-
-.menu-section:hover .menu-card:not(:hover) {
-    flex: 0.6;
-}
-
-.menu-card img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 4px solid #000;
-}
-
-.menu-card h3 {
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-
-.menu-card p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #b5b5b5;
-}
-
-.menu-card:hover h3,
-.menu-card:hover p,
-.menu-card:hover span {
-    color: #ffffff;
-}
-
-.menu-cta-wrapper {
-    width: auto;
-    display: none;
-    align-items: center;
-    gap: .5em;
-    padding: .5em 1em;
-    border-radius: .5em;
-}
-
-.menu-cta-wrapper:hover {
-    background-color: #d33b0390;
-}
-
-.menu-card:hover>.menu-cta-wrapper {
-    margin-top: auto;
-    display: flex;
+            &:last-child{
+                @apply mr-0;
+            }
+        }
+    }  
 }

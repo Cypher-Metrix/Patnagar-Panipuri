@@ -24,7 +24,7 @@ const Footer = () => {
                             <div className="footer-sociallinks grid grid-cols-3 gap-2.5">
                                 {socialLinks?.map(({ id, link, icon: Icon, colorClass }) => (
                                     <a href={link} target="_blank" key={id} className={`relative group h-5 w-5 lg:h-8 lg:w-8 flex items-center justify-center rounded-full`}>
-                                        {Icon && <Icon fontSize={30} className={`${colorClass} w-full h-full`} />}
+                                        {Icon && <Icon fontSize={40} className={`${colorClass} w-full h-full`} />}
                                     </a>
                                 ))}
                             </div>
