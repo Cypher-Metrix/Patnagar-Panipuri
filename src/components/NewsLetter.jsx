@@ -13,8 +13,8 @@ export default function NewsLetter() {
     const [loading, setLoading] = useState(false)
 
     const isValidEmail = (value) => {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
-    }
+        return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value);
+    };
 
     const handleChange = (e) => {
         const value = e.target.value
