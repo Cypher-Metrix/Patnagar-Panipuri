@@ -8,8 +8,6 @@ export default function TestimonialCard({ testimonialContent }) {
     const [expanded, setExpanded] = useState(false);
 
     const totalStars = 5;
-    const randomColors = ["#FF5733", "#33FF57", "#3357FF", "#FF33A8", "#33FFF3", "#F3FF33", "#8E44AD", "#E67E22"];
-    const bgColor = randomColors[Math.floor(Math.random() * randomColors.length)];
 
     return (
         <div className="w-full bg-slate-200 rounded-3xl testimonial-card mb-12 transition-all duration-300">
@@ -80,10 +78,9 @@ export default function TestimonialCard({ testimonialContent }) {
                             />
                             :
                             (
-                                <div className={`h-10 w-10 object-cover rounded-full flex items-center justify-center`}
-                                    style={{ background: bgColor }}
+                                <div className={`h-10 w-10 object-cover rounded-full flex items-center justify-center bg-gray-800`}
                                 >
-                                    <span className="text-xl font-semibold">{author.substring(0, 1)}</span>
+                                    <span className="text-xl text-white font-semibold">{author.substring(0, 1)}</span>
                                 </div>
                             )
                         }

@@ -4,6 +4,10 @@
         &::before{
             display: none;
         }
+
+        .slick-slide{
+            @apply w-full!;
+        }
         
         .slick-slide > div:first-child {
             @apply h-full;
