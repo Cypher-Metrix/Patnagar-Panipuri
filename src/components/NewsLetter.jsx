@@ -31,40 +31,44 @@ export default function NewsLetter() {
 
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
+        e.preventDefault();
 
         if (!email || validationError) {
-            toast.error(validationError || 'Invalid email')
-            return
+            toast.error(validationError || "Invalid email");
+            return;
         }
 
-        setLoading(true)
+        setLoading(true);
 
         try {
-            const formData = new FormData()
-            formData.append('email', email)
+            const formData = new FormData();
+            formData.append("email", email);
 
             const response = await fetch(import.meta.env.VITE_WEBAPP_URL, {
-                method: 'POST',
+                method: "POST",
                 body: formData,
-            })
+            });
 
-            const result = await response.json()
+            const result = await response.json();
 
             if (result.success) {
-                setEmail('')
-                toast.success('Thanks for subscribing!')
-            } else if (result.duplicate) {
-                toast.error('This email is already subscribed.')
-            } else {
-                toast.error('Failed to subscribe. Please try again.')
+                setEmail("");
+                toast.success(result.message || "Thanks for subscribing!");
             }
+            else if (result.duplicate) {
+                toast.error(result.message || "You've already subscribed!");
+            }
+            else {
+                toast.error(result.message || "Failed to subscribe. Please try again.");
+            }
+
         } catch (err) {
-            toast.error('Network error. Please try again.', err.message);
+            toast.error("Network error. Please try again: " + err.message);
         } finally {
-            setLoading(false)
+            setLoading(false);
         }
-    }
+    };
+
 
     const isFormValid = email && !validationError
 
