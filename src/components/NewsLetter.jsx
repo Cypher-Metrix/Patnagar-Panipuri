@@ -74,7 +74,7 @@ export default function NewsLetter() {
             id="newsletter"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-            <div className='inset absolute left-0 top-0 bottom-0 right-0 bg-black/50' />
+            <div className='inset absolute left-0 top-0 bottom-0 right-0 bg-black/70' />
             <div className="inner-wrap">
                 <motion.div className="container relative"
                     initial={{ opacity: 0, y: 50 }}

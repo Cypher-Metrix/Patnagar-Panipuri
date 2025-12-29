@@ -38,21 +38,24 @@ export default function HeroBanner() {
             <div className='inner-wrap'>
                 <div className='container'>
                     <div className='w-full flex flex-wrap gap-5 lg:gap-0 items-center justify-center sm:-mx-3'>
-                        <motion.div className='w-full lg:w-1/2 sm:px-3'
+                        <motion.div className='w-full lg:w-1/2 sm:px-3 relative'
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7 }}
                             viewport={{ once: true }}
                         >
+                            <img src={shopData?.left_bg} className="absolute right-0 lg:right-20 -bottom-24 h-auto z-10 opacity-75" />
                             {shopData.openingHours &&
-                                <div className='p-2.5 px-4 inline-flex items-center justify-start gap-2.5 bg-gray-100/90 rounded-4xl mb-2.5 lg:mb-5'>
+                                <div className='p-2.5 px-4 inline-flex items-center relative z-20 justify-start gap-2.5 bg-gray-100/90 rounded-4xl mb-2.5 lg:mb-5'>
                                     <div className={`h-2 w-2 rounded-full ${open ? "bg-green-600" : 'bg-red-600'}`} />
                                     <p className='mb-0 text-sm'>{open ? "Open Now" : 'Closed'}</p>
                                 </div>}
-                            <IntroText intoTextContent={intoTextContent} settings={settings} />
-                            <IntroLinks introLinks={introLinks} settings={settings} />
+                            <div className="relative z-20 w-full">
+                                <IntroText intoTextContent={intoTextContent} settings={settings} />
+                                <IntroLinks introLinks={introLinks} settings={settings} />
+                            </div>
                             {(shopData.openingHours || shopData.location) &&
-                                <div className='flex flex-col items-start justify-center pt-7'>
+                                <div className='flex flex-col items-start justify-center pt-7 relative z-20'>
                                     <div className='w-full mb-7 h-px bg-gray-500' />
                                     <div className='flex items-center justify-start gap-2.5 md:gap-6'>
                                         {shopData?.openingHours && <div className='flex items-center justify-center gap-2.5'>
@@ -72,7 +75,7 @@ export default function HeroBanner() {
                                     </div>
                                 </div>}
                         </motion.div>
-                        <motion.div className='w-full lg:w-1/2 sm:px-3'
+                        <motion.div className='w-full lg:w-1/2 sm:px-3 relative z-20'
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7 }}
@@ -102,7 +105,7 @@ export default function HeroBanner() {
                 </div>
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0"><svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full"><path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" className='fill-gray-50'></path></svg></div>
+            <div className="absolute bottom-0 left-0 right-0 z-20"><svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full"><path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" className='fill-gray-50'></path></svg></div>
         </section >
     )
 }

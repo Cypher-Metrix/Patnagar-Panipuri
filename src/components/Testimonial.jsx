@@ -64,7 +64,7 @@ export default function Testimonial() {
                     >
                         <Slider ref={sliderRef} {...slickSettings}>
                             {testimonialsData.map((item) => (
-                                <div className="w-full h-full" key={item.id}>
+                                <div className="px-2 h-full" key={item.id}>
                                     <TestimonialCard testimonialContent={item} />
                                 </div>
                             ))}
